@@ -22,8 +22,8 @@ body {
 }
 
 .jumbotron {
-    text-align: center;
-    background-color: #b0c4de;
+    text-align: left-side;
+    background-color: #ffffff;
 }
 
 .jumbotron .btn {
