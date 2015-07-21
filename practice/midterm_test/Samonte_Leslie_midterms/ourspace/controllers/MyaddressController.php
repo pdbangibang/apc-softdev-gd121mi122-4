@@ -1,4 +1,3 @@
-
 <?php
 
 namespace app\controllers;
@@ -9,7 +8,6 @@ use app\models\MyaddressSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
 
 /**
  * MyaddressController implements the CRUD actions for Myaddress model.
