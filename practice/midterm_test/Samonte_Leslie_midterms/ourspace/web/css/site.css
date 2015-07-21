@@ -1,7 +1,8 @@
 html,
 body {
     height: 100%;
-	background-color: #000000;
+	background-color: #FFF9E6;
+	font-family: "Times New Roman", Times, serif;
 }
 
 .wrap {
