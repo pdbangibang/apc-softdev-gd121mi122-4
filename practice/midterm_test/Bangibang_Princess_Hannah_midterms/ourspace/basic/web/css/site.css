@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;	
+	background-color: #000000;
 }
 
 .wrap {
@@ -16,14 +17,14 @@ body {
 
 .footer {
     height: 60px;
-    background-color: #ffffff;
+    background-color: #000000;
     border-top: 1px solid #ddd;
     padding-top: 20px;
 }
 
 .jumbotron {
     text-align: left-side;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 .jumbotron .btn {
