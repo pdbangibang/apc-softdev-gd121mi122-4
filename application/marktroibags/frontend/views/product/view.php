@@ -6,7 +6,7 @@ use frontend\models\Product;
 use frontend\models\ProductSearch;
 
 use yii\grid\GridView;
-use common\models\User;
+use common\models\user;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Product */

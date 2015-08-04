@@ -1,6 +1,6 @@
 <?php
 /* @var $this yii\web\View */
-$this->title = 'Makrtroi Bags';
+$this->title = 'Marktroi Bags';
 ?>
 
 <html class="no-js">
@@ -12,7 +12,7 @@ $this->title = 'Makrtroi Bags';
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
         <!-- stylesheets -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/font_icon/css/pe-icon-7-stroke.css">
         <link rel="stylesheet" href="assets/font_icon/css/helper.css">
         <link rel="stylesheet" href="assets/css/owl.carousel.css">
@@ -58,11 +58,20 @@ $this->title = 'Makrtroi Bags';
                              <div class="dropdown-menu">
                                  <div class="arrow-up"></div>
                                  <ul>
-                                     <li><a data-scroll href="#body">Home <i class="pe-7s-home"></i></a><span class="menu-effect"></span></li>
-                                     <li><a data-scroll href="#services">Service <i class="pe-7s-config"></i></a><span class="menu-effect"></span></li>
-                                     <li><a data-scroll href="#portfolio">Portfolio <i class="pe-7s-glasses"></i></a><span class="menu-effect"></span></li>
-                                     <li><a data-scroll href="#testimonial">Testimonial <i class="pe-7s-comment"></i><span class="menu-effect"></span></a></li>
-                                     <li><a data-scroll href="#contact">Contact <i class="pe-7s-help1"></i></a><span class="menu-effect"></span></li>
+									
+                                     <li><a data-scroll href="<?php 
+									if (Yii::$app->user->isGuest) {
+										$menuItems = 
+										[
+										['label' => 'Home', 'url' => Yii::$app->homeUrl],
+										];
+									 }
+									 ?>">Home <i class="pe-7s-home"></i></a><span class="menu-effect"></span></li>
+									 
+                                     <li><a data-scroll href="product/index">Products <i class="pe-7s-config"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="site/about">About <i class="pe-7s-glasses"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="site/contact">Contact <i class="pe-7s-comment"></i><span class="menu-effect"></span></a></li>
+                                     <li><a data-scroll href="site/signup">Sign Up <i class="pe-7s-help1"></i></a><span class="menu-effect"></span></li>
                                  </ul>
                              </div>
                         </div>
@@ -141,7 +150,7 @@ $this->title = 'Makrtroi Bags';
                         </figure>
                     </div>
                     <div class="col-xs-12">
-                        <div class="btn-center"><a href="#" class="big button">View all</a></div>
+                        <div class="btn-center"><a href="product/index" class="big button">View all</a></div>
                     </div>
                 </div>
             </div><!-- container -->
@@ -184,62 +193,7 @@ $this->title = 'Makrtroi Bags';
 
         <!-- Contact Area -->
 
-        <section id="contact" class="mapWrap">
-            <div id="googleMap" style="width:100%;"></div>
-            <div id="contact-area">
-                <div class="container">
-                    <h2 class="block_title">Hey !!!</h2>
-                    <div class="row">
-                        <div class="col-xs-12">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="moreDetails">
-                                <h2 class="con-title">More About me</h2>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum animi repudiandae nihil aspernatur repellat temporibus doloremque sint ea laboriosam, excepturi iure inventore rerum voluptatibus, suscipit totam, sit necessitatibus. Rerum, blanditiis. </p>
-                                <ul class="address">
-                                    <li><i class="pe-7s-map-marker"></i><span>1600 Pennsylvania Ave NW,<br>Washington, DC 20500,<br>United States</span></li>
-                                    <li><i class="pe-7s-mail"></i><span>example@gmail.com</span></li>
-                                    <li><i class="pe-7s-phone"></i><span>+1-202-555-0144</span></li>
-                                    <li><i class="pe-7s-global"></i><span><a href="#">www.themewagon.com</a></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <h2 class="con-title">Drop us a line</h2>
-                            <form role="form">
-                              <div class="form-group">
-                                <input type="text" class="form-control" id="user_name" placeholder="Enter your name">
-                              </div>
-                              <div class="form-group">
-                                <input type="email" class="form-control" id="your_email" placeholder="Enter your email">
-                              </div>
-                              <div class="form-group">
-                                <textarea name="InputMessage" id="user_message" class="form-control" rows="5" required></textarea>
-                              </div>
-
-                              <button type="submit" class="btn medium">Let us know</button>
-                            </form>   
-                        </div>
-                    </div>
-                </div><!-- container -->
-            </div><!-- contact-area -->
-            <div id="social">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul class="scoialinks">
-                                <li class="normal-txt">Find me on</li>
-                                <li class="social-icons"><a class="facebook" href="#"></a></li>
-                                <li class="social-icons"><a class="twitter" href="#"></a></li>
-                                <li class="social-icons"><a class="linkedin" href="#"></a></li>
-                                <li class="social-icons"><a class="google-plus" href="#"></a></li>
-                                <li class="social-icons"><a class="wordpress" href="#"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- social -->
-        </section><!-- contact -->
+        
 
         <!-- Footer Area -->
 
@@ -247,10 +201,7 @@ $this->title = 'Makrtroi Bags';
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <p class="copyright">© Copyright 2014 <a href="http://wwww.technextit.com" target="_blank">Technext</a></p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="designed">Designed and Developed by <a href="http://themewagon.com" target="_blank">Themewagon</a></p>
+                        <p class="copyright">© Copyright 2015 <a href="http://wwww.technextit.com" target="_blank">Marktroi Bags</a></p>
                     </div>
                 </div>
             </div>

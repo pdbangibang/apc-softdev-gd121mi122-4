@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
-use common\models\User;
+use common\models\user;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Product */

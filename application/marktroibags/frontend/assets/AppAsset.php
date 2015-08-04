@@ -18,23 +18,22 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-		'css/bootstrap.min.css',
-		'css/font-awesome.min.css',
-		'css/style.css',
+		'assets/css/bootstrap.min.css',
+		'assets/css/animate.css',
+		'assets/css/own.carousel.css',
+        'assets/css/owl.theme.css',
+		'assets/css/style.css',
         'css/site.css',
     ];
     public $js = [
-		'js/bootstrap.js',
-		'js/html5.js',
-		'js/jquery.actual.min.js',
-		'js/jquery.scrollTo.min.js',
-		'js/jquery-2.1.3.min.js',
-		'js/jquery-migrate-1.2.1.min.js',
-		'js/respond.js',
-		'js/script.js',
-		'js/selectivizr.js',
-		'js/smoothscroll.js',
-		'js/main.js',
+		'assets/js/bootstrap.min.js',
+		'assets/js/jquery.actual.js',
+		'assets/js/jquery-2.1.3.min.js',
+		'assets/js/modernizr.js',
+		'assets/js/owl.carousel.js',
+		'assets/js/script.js',
+		'assets/js/smoothscroll.js',
+		'assets/js/main.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

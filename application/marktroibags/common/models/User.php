@@ -29,10 +29,6 @@ class User extends ActiveRecord implements IdentityInterface
 {
     const STATUS_DELETED = 0;
     const STATUS_ACTIVE = 10;
-    const EVENT_NEW_USER = 'new-user';
-    
-    
-    
 
     /**
      * @inheritdoc
@@ -41,21 +37,6 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return '{{%user}}';
     }
-    
-    
-
-    // say, whenever new user registers, below method will send an email.
-    public function sendMail($event){
-        echo 'mail sent to admin';
-    // you code 
-    }
-
-    // one more hanlder.
-
-    public function notification($event){
-        echo 'notification created';
-    }
-    
 
     /**
      * @inheritdoc

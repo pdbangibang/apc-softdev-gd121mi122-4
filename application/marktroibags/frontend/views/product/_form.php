@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
-use common\models\User;
+use common\models\user;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Product */
@@ -12,14 +12,18 @@ use common\models\User;
 
 <div class="product-form">
 
-    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>  
-     
-    
-    <?= $form->field($model, 'username')->textInput(['value'=>Yii::$app->user->identity->username]) ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
+
+    <?= $form->field($model, 'user_id')->dropDownlist(
+        ArrayHelper::map(user::find()->all(),'id','username'),
+        ['prompt'=>'Select user']
+     )?>   
+
+    <?= $form->field($model, 'id')->textInput() ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => 45]) ?>
 
-    <?= $form->field($model, 'description')->textArea() ?>
+    <?= $form->field($model, 'description')->textInput(['maxlength' => 45]) ?>
     
     <?= $form->field($model, 'file')->fileInput(); ?>
 

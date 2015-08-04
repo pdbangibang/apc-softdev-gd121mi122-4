@@ -417,15 +417,26 @@ header{
     font-size: 2em;
 }
 
-
+#register {
+    background: url(../images/parallax.jpg);
+    
+    color: #fff;
+    background-attachment: fixed;
+    background-size: cover;
+}
 /* ///////////////////////////////////////////////////////////////////// 
 //  07 - Contact
 /////////////////////////////////////////////////////////////////////*/
 
 
 #contact {
+    background: url(../images/map.jpg);
+    
     color: #fff;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
 
 .mapWrap {
     position: relative;

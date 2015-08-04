@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use common\models\LoginForm;
 use yii\base\Model;
-use common\models\User;
+use common\models\user;
 use frontend\models\Order;
 
 /* @var $this yii\web\View */

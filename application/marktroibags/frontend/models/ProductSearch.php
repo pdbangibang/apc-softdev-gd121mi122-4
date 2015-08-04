@@ -6,7 +6,7 @@ use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use frontend\models\Product;
-use common\models\User;
+use common\models\user;
 
 /**
  * ProductSearch represents the model behind the search form about `frontend\models\Product`.
@@ -55,7 +55,7 @@ class ProductSearch extends Product
             // $query->where('0=1');
             return $dataProvider;
         }
-        $query->joinWith('User');
+        $query->joinWith('user');
 
         $query->andFilterWhere([
             
@@ -64,7 +64,7 @@ class ProductSearch extends Product
 
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'description', $this->description])
-            ->andFilterWhere(['like', 'User.username', $this->user_id]);
+            ->andFilterWhere(['like', 'user.username', $this->user_id]);
             
 
         return $dataProvider;

@@ -12,12 +12,12 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
-        'urlManager' => [
+         'urlManager' => [
         'class' => 'yii\web\UrlManager',
         // Disable index.php
         'showScriptName' => false,
         // Disable r= routes
-        'enablePrettyUrl' => false,
+        'enablePrettyUrl' => true,
         'rules' => array(
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
