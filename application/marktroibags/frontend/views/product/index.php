@@ -54,8 +54,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <figure>
                             <img src="uploads/p2.jpg" alt="img01">
                             <figcaption>
-                                <h3>Camera</h3>
-                                <span>Jacob Cummings</span>
+                                <h3>Backpack</h3>
                                 <a href="#" class="button" >Take a look</a>
                             </figcaption>
                         </figure>
@@ -64,8 +63,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <figure>
                             <img src="uploads/p3.jpg" alt="img02">
                             <figcaption>
-                                <h3>Music</h3>
-                                <span>Jacob Cummings</span>
+                                <h3>Duffel Bag</h3>
                                 <a href="#" class="button" >Take a look</a>
                             </figcaption>
                         </figure>
@@ -74,8 +72,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <figure>
                             <img src="uploads/p4.jpg" alt="img04">
                             <figcaption>
-                                <h3>Settings</h3>
-                                <span>Jacob Cummings</span>
+                                <h3>Shoulder Bag</h3>
                                 <a href="#" class="button" >Take a look</a>
                             </figcaption>
                         </figure>
@@ -84,8 +81,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <figure>
                             <img src="uploads/p5.jpg" alt="img01">
                             <figcaption>
-                                <h3>Camera</h3>
-                                <span>Jacob Cummings</span>
+                                <h3>Purse</h3>
                                 <a href="#" class="button" >Take a look</a>
                             </figcaption> 
                         </figure>
@@ -94,8 +90,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <figure>
                             <img src="uploads/p6.jpg" alt="img02">
                             <figcaption>
-                                <h3>Music</h3>
-                                <span>Jacob Cummings</span>
+                                <h3>Laptop</h3>
                                 <a href="#" class="button" >Take a look</a>
                             </figcaption>
                         </figure>
