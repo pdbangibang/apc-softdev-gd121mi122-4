@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 04, 2015 at 06:32 AM
+-- Generation Time: Aug 07, 2015 at 12:15 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -19,6 +19,31 @@ SET time_zone = "+00:00";
 --
 -- Database: `marktroibags-db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE IF NOT EXISTS `admin` (
+  `id` int(11) NOT NULL,
+  `fname` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `lname` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `contact_no` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `username` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `company_name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `company_description` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `shipping_address` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `auth_ke` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `role` int(2) NOT NULL,
+  `password_hash` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password_reset_token` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `status` smallint(6) NOT NULL,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -78,21 +103,20 @@ CREATE TABLE IF NOT EXISTS `product` (
   `name` varchar(100) NOT NULL,
   `description` varchar(200) NOT NULL,
   `logo` varchar(200) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `product`
 --
 
 INSERT INTO `product` (`user_id`, `username`, `id`, `name`, `description`, `logo`) VALUES
-(1, 'marktroibags-admin', 6, 'Backpack', 'A sturdy bag designed for carrying articles on a person''s back, having shoulder straps and often mounted on a lightweight frame.', 'uploads/Backpack.jpg'),
+(1, 'marktroibags-admin', 6, 'Backpack', 'A sturdy bag designed for carrying articles on a person''s back, having shoulder straps and often mounted on a lightweight frame.', 'uploads/backpack.jpg'),
 (1, 'marktroibags-admin', 7, 'Clutch Bag', 'A small flat bag without a handle, carried by women, especially on formal occasions. Designed to hold a few necessities like a driver''s license, a cellphone, and a credit card.', 'uploads/Clutch Bag.jpg'),
 (1, 'marktroibags-admin', 8, 'Duffel Bag', 'A large, cylindrical bag, especially of canvas, for carrying personal belongings, originally used by military personnel.', 'uploads/Duffel Bag.jpg'),
 (1, 'marktroibags-admin', 9, 'Laptop', 'Backpacks, messenger bags, briefcases, and top loaders are the four main kinds of laptop bags. ', 'uploads/Laptop.jpg'),
 (1, 'marktroibags-admin', 10, 'Purse', 'A usually closable bag used for carrying keys, a wallet, and other personal items, especially by women; a handbag.', 'uploads/Purse.jpg'),
 (1, 'marktroibags-admin', 11, 'Shoulder Bag', 'A handbag carried by a strap that is looped over the shoulder.', 'uploads/Shoulder Bag.jpg'),
-(1, 'marktroibags-admin', 12, 'Sports/Travelling', 'A large cylindrical bag made of cloth or other fabric with a drawstring closure at the top. It is often used to carry luggage or sports equipment by people who travel in the outdoors.', ''),
-(5, 'admin', 16, 'sample bag', 'sample sample', 'uploads/sample bag.jpg');
+(1, 'marktroibags-admin', 12, 'Sports/Travelling', 'A large cylindrical bag made of cloth or other fabric with a drawstring closure at the top. It is often used to carry luggage or sports equipment by people who travel in the outdoors.', '');
 
 -- --------------------------------------------------------
 
@@ -154,7 +178,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `status` smallint(6) NOT NULL DEFAULT '10',
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `user`
@@ -165,11 +189,20 @@ INSERT INTO `user` (`id`, `fname`, `lname`, `contact_no`, `username`, `company_n
 (5, 'admin', 'admin', '12345', 'admin', 'APC', NULL, 'Humabon Magallanes', 'y3LLXm_G6JEYj82dUoAMomogA0rIu20m', 0, '$2y$13$KUkjhvylbwknrw8z7p6uLuE4TfgF8RDgwXFQPdaq7FTsn.vo0cH8W', NULL, 'demonstration@apc.edu.ph', 10, 1427533223, 1427533223),
 (6, 'demo', 'demo', 'demo', 'demo', 'APC', NULL, 'Humabon Magallanes', '8urHe0RqNuerCN2oPGM9jvpBCKRiVPjY', 0, '$2y$13$KoNYWb8Nx07dLsnIHPPOKePg5E2B2AQsqMUrcuOdiqcupR88g.cPW', NULL, 'demonstration2@apc.edu.ph', 10, 1427533355, 1427533355),
 (7, 'Troi', 'Bolton', '12345', 'user1', 'user1 company', NULL, 'Bangkal', 'Nc_im7-2piRLyph_cr2WG5Zt0VeqofqR', 0, '$2y$13$z7hDHk.Xq4CeYk8OITzY2.igleNeU/sL0cz3b0HqYvEhB0yamz.7u', NULL, 'user1@gmail.com', 10, 1428468788, 1428468788),
-(8, 'Leslie', 'Samonte', '09268869977', 'lsamonte', 'apc', NULL, '123 lala city', 'wymuQbrm3jFvABjCrJzM0U7I8SQoZOnc', 0, '$2y$13$Jm.hhSoOZ.K8LBSD8kWOEeHuu6RESLnyu4bTKUh6bxnb3bVIsbCG2', NULL, 'lesliemsamonte@gmail.com', 10, 1436846904, 1436846904);
+(8, 'Leslie', 'Samonte', '09268869977', 'lsamonte', 'apc', NULL, '123 lala city', 'wymuQbrm3jFvABjCrJzM0U7I8SQoZOnc', 0, '$2y$13$Jm.hhSoOZ.K8LBSD8kWOEeHuu6RESLnyu4bTKUh6bxnb3bVIsbCG2', 'Q0zIBptUcMhJbRVyj-1eXOKLV0e5V_wg_1438781315', 'lesliemsamonte@gmail.com', 10, 1436846904, 1438781315),
+(9, 'Leslie', 'Samonte', '09268869977', 'lsamonte12', 'abcd', NULL, 'abcd', 'svBO0W9JcBd0Wz8731XyJs_nAHwz0deQ', 0, '$2y$13$oaq7iuzNkGEEO6eV68FVJe13Xk53JeHkkHURGrntjyPwUjwvzIDLa', NULL, 'lesliemsamonte@yahoo.com', 10, 1438681766, 1438681766),
+(10, 'demo', 'demo', '12345', 'demo123', 'demo', NULL, 'demo', 'zu4rztPewA4msivKtrjohSxj6yOIKJox', 0, '$2y$13$AJ8ixwgGnjf4gNu/GUlcbOwhPauigOhpiZ9I0Q10JeYOoQjMAEFD.', NULL, 'demo123@gmail.com', 10, 1438877202, 1438877202),
+(11, 'test', 'test', '12345', 'test123', 'test', NULL, 'test', 'CVwWDeHZmIDTlXiuT4SVZa1yZS7xlNB4', 0, '$2y$13$kHf762d73YvsujK7SQHDF.0AW6ApTQv/wxKEIkFbp88blWdiS3OFy', 'ugXPSzRXnSfPOBcrnC1LgVTtAQUmIeYm_1438881897', 'test123@gmail.com', 10, 1438877542, 1438881897);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `migration`
@@ -220,7 +253,7 @@ ALTER TABLE `order`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `promotion`
 --
@@ -235,7 +268,7 @@ ALTER TABLE `report`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- Constraints for dumped tables
 --
