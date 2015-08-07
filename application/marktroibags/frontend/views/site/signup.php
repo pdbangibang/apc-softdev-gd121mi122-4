@@ -47,57 +47,26 @@ $this->params['breadcrumbs'][] = $this->title;
                             
 							<h3>Please fill out the following fields to register an account:</h3>
 							</br>
-                            <form role="form">
-                              <div class="form-group">
-                                <input type="text" class="form-control" id="user_name" placeholder="First Name">
-                              </div>
-							  <div class="form-group">
-                                <input type="text" class="form-control" id="user_name" placeholder="Last Name">
-                              </div>
-                              <div class="form-group">
-                                <input type="number" class="form-control" id="your_email" placeholder="Contact No.">
-                              </div>
-							  <div class="form-group">
-                                <input type="text" class="form-control" id="user_name" placeholder="Username">
-                              </div>
-							  <div class="form-group">
-                                <input type="email" class="form-control" id="your_subject" placeholder="Email">
-                              </div>
-							  <div class="form-group">
-                                <input type="password" class="form-control" id="your_subject" placeholder="Password">
-                              </div>
-							  <div class="form-group">
-                                <input type="text" class="form-control" id="user_name" placeholder="Company Name">
-                              </div>
-							  <div class="form-group">
-                                <input type="text" class="form-control" id="user_name" placeholder="Company Description">
-                              </div>							  
-                              <div class="form-group">
-                                <textarea name="InputMessage" id="user_message" placeholder="Shipping Address" class="form-control" rows="5" required></textarea>
-                              </div>
-
-                              <button type="submit" class="btn medium">Register</button>
-                            </form>
-						</center>
+							</center>
+							<?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
+				<?= $form->field($model, 'fname') ?>
+				<?= $form->field($model, 'lname') ?>
+				<?= $form->field($model, 'contact_no') ?>
+                <?= $form->field($model, 'username') ?>
+                <?= $form->field($model, 'email') ?>
+                <?= $form->field($model, 'password')->passwordInput() ?>
+				<?= $form->field($model, 'company_name') ?>
+				<?= $form->field($model, 'company_description') ?>
+				<?= $form->field($model, 'shipping_address') ?>
+                <div class="form-group">
+                    <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
+                </div>
+            <?php ActiveForm::end(); ?>
+						
                     </div>
                 </div><!-- container -->
             </div><!-- contact-area -->
-            <div id="social">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul class="scoialinks">
-                                <li class="normal-txt">Find me on</li>
-                                <li class="social-icons"><a class="facebook" href="#"></a></li>
-                                <li class="social-icons"><a class="twitter" href="#"></a></li>
-                                <li class="social-icons"><a class="linkedin" href="#"></a></li>
-                                <li class="social-icons"><a class="google-plus" href="#"></a></li>
-                                <li class="social-icons"><a class="wordpress" href="#"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- social -->
+           
         </section>
 			 <footer>
             <div class="container">

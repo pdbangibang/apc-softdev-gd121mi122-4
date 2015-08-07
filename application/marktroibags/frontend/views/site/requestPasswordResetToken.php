@@ -47,12 +47,13 @@ $this->params['breadcrumbs'][] = $this->title;
                             
 							<h3>Please fill out your email. A link to reset password will be sent there.</h3>
 							</br>
-                            <form role="form">
-                              <div class="form-group">
-                                <input type="email" class="form-control" id="user_name" placeholder="Email">
-                              </div>
-                              <button type="submit" class="btn medium">Send</button>
-                            </form>
+                            <?php $form = ActiveForm::begin(['id' => 'request-password-reset-form']); ?>
+								<?= $form->field($model, 'email') ?>
+								
+								<div class="form-group">
+									<?= Html::submitButton('Send', ['class' => 'btn btn-primary']) ?>
+								</div>
+							<?php ActiveForm::end(); ?>
 						</center>
                     </div>
                 </div><!-- container -->
