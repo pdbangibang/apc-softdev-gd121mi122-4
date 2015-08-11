@@ -16,14 +16,10 @@ $this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="product-view">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-
     	<section id="contact" class="mapWrap">
             <div id="googleMap" style="width:100%;"></div>
             <div id="contact-area">
                 <div class="container">
-                    <h2 class="block_title">Hey !!!</h2>
                     <div class="row">
                         <div class="col-xs-12">
                         </div>
