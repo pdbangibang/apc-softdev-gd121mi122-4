@@ -10,6 +10,8 @@ $this->title = 'Login';
 
 ?>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -38,6 +40,7 @@ $this->title = 'Login';
 <!DOCTYPE html>
 >>>>>>> 89e3d31be7bf3013f2cfa28c448f7cc134eaf1b7
 <html lang="en">
+>>>>>>> b5a71c732e89993486621de34656a21d000d1846
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -98,8 +101,11 @@ $this->title = 'Login';
 					</div>
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 >>>>>>> 7cc860f1dfcb20c52ce1da9e1107d328e07446ff
 >>>>>>> f7726b7b0b2b13daed37e2ad6c8f0e03f5b94708
+>>>>>>> b5a71c732e89993486621de34656a21d000d1846
             <?php ActiveForm::end(); ?>
                     <!-- form -->
                 </section>
