@@ -41786,3 +41786,353 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1428983963.734
     'REQUEST_TIME' => 1428983963
 ]
+2015-08-11 02:31:20 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/request-password-reset' in C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('request-passwor...', Array)
+#1 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/request-pa...', Array)
+#2 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-08-11 02:31:20 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/request-password-reset'
+]
+
+$_COOKIE = [
+    'device_id' => '47583191391744080'
+    '_csrf' => '0192627d3a1e0eb7474a181a28b9a4addfd51d23adb8d0ccdc5b4af23ba481f6s:32:\"WoJrAZUCRp0M4kieXrlnTVbdFADqx0i2\";'
+    'PHPSESSID' => 'spf6no77qrkq6b2qp646phmk45'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/marktroibags/marktroibags/backend/web/assets/js/main.js'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/marktroibags/marktroibags/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'device_id=47583191391744080; _csrf=0192627d3a1e0eb7474a181a28b9a4addfd51d23adb8d0ccdc5b4af23ba481f6s%3A32%3A%22WoJrAZUCRp0M4kieXrlnTVbdFADqx0i2%22%3B; PHPSESSID=spf6no77qrkq6b2qp646phmk45'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\Windows Live\\Shared\\;C:\\Android;C:\\adb;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseGit\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/marktroibags/marktroibags/backend/web/index.php'
+    'REMOTE_PORT' => '61781'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Frequest-password-reset'
+    'REQUEST_URI' => '/marktroibags/marktroibags/backend/web/index.php?r=site%2Frequest-password-reset'
+    'SCRIPT_NAME' => '/marktroibags/marktroibags/backend/web/index.php'
+    'PHP_SELF' => '/marktroibags/marktroibags/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1439253080.32
+    'REQUEST_TIME' => 1439253080
+]
+2015-08-11 05:38:03 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/request-password-reset' in C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('request-passwor...', Array)
+#1 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/request-pa...', Array)
+#2 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-08-11 05:38:03 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/request-password-reset'
+]
+
+$_COOKIE = [
+    'device_id' => '47583191391744080'
+    '_csrf' => 'd5427df8e3a8662747a3fd1360d330748a44491415c726d70f4feeeb1060a8b3s:32:\"TCNWkRoNZDso6Aimx5eAPalTZupnKDlS\";'
+    'PHPSESSID' => '0mp1t2dlr513jamffnruughjp5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/marktroibags/marktroibags/backend/web/assets/js/main.js'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/marktroibags/marktroibags/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'device_id=47583191391744080; _csrf=d5427df8e3a8662747a3fd1360d330748a44491415c726d70f4feeeb1060a8b3s%3A32%3A%22TCNWkRoNZDso6Aimx5eAPalTZupnKDlS%22%3B; PHPSESSID=0mp1t2dlr513jamffnruughjp5'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\Windows Live\\Shared\\;C:\\Android;C:\\adb;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseGit\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/marktroibags/marktroibags/backend/web/index.php'
+    'REMOTE_PORT' => '65369'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Frequest-password-reset'
+    'REQUEST_URI' => '/marktroibags/marktroibags/backend/web/index.php?r=site%2Frequest-password-reset'
+    'SCRIPT_NAME' => '/marktroibags/marktroibags/backend/web/index.php'
+    'PHP_SELF' => '/marktroibags/marktroibags/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1439264283.618
+    'REQUEST_TIME' => 1439264283
+]
+2015-08-11 05:38:37 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/request-password-reset' in C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('request-passwor...', Array)
+#1 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/request-pa...', Array)
+#2 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-08-11 05:38:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/request-password-reset'
+]
+
+$_COOKIE = [
+    'device_id' => '47583191391744080'
+    '_csrf' => 'd5427df8e3a8662747a3fd1360d330748a44491415c726d70f4feeeb1060a8b3s:32:\"TCNWkRoNZDso6Aimx5eAPalTZupnKDlS\";'
+    'PHPSESSID' => '0mp1t2dlr513jamffnruughjp5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/marktroibags/marktroibags/backend/web/assets/js/main.js'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/marktroibags/marktroibags/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'device_id=47583191391744080; _csrf=d5427df8e3a8662747a3fd1360d330748a44491415c726d70f4feeeb1060a8b3s%3A32%3A%22TCNWkRoNZDso6Aimx5eAPalTZupnKDlS%22%3B; PHPSESSID=0mp1t2dlr513jamffnruughjp5'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\Windows Live\\Shared\\;C:\\Android;C:\\adb;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseGit\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/marktroibags/marktroibags/backend/web/index.php'
+    'REMOTE_PORT' => '65380'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Frequest-password-reset'
+    'REQUEST_URI' => '/marktroibags/marktroibags/backend/web/index.php?r=site%2Frequest-password-reset'
+    'SCRIPT_NAME' => '/marktroibags/marktroibags/backend/web/index.php'
+    'PHP_SELF' => '/marktroibags/marktroibags/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1439264317.596
+    'REQUEST_TIME' => 1439264317
+]
+2015-08-11 05:51:30 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/signup' in C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('signup', Array)
+#1 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#2 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-08-11 05:51:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'device_id' => '47583191391744080'
+    '_csrf' => 'd5427df8e3a8662747a3fd1360d330748a44491415c726d70f4feeeb1060a8b3s:32:\"TCNWkRoNZDso6Aimx5eAPalTZupnKDlS\";'
+    'PHPSESSID' => 'lq497bes2d6o7vtpb9bjsrdi53'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/marktroibags/marktroibags/backend/web/assets/js/main.js'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/marktroibags/marktroibags/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'device_id=47583191391744080; _csrf=d5427df8e3a8662747a3fd1360d330748a44491415c726d70f4feeeb1060a8b3s%3A32%3A%22TCNWkRoNZDso6Aimx5eAPalTZupnKDlS%22%3B; PHPSESSID=lq497bes2d6o7vtpb9bjsrdi53'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\Windows Live\\Shared\\;C:\\Android;C:\\adb;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseGit\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/marktroibags/marktroibags/backend/web/index.php'
+    'REMOTE_PORT' => '65520'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/marktroibags/marktroibags/backend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/marktroibags/marktroibags/backend/web/index.php'
+    'PHP_SELF' => '/marktroibags/marktroibags/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1439265090.496
+    'REQUEST_TIME' => 1439265090
+]
+2015-08-11 06:35:17 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\AdminLoginForm' not found' in C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\backend\controllers\SiteController.php:67
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-08-11 06:35:16 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'device_id' => '47583191391744080'
+    '_csrf' => '459d08cffd39394a6c5abf56637d01c820b170c349ba53a0fbc93cda44b48b13s:32:\"r0GOvN4z80AlpM4eWKDa6w6AGNvkLlzx\";'
+    'PHPSESSID' => 'l40aqgq2er6hdo0tq6kjrmcqa1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'device_id=47583191391744080; _csrf=459d08cffd39394a6c5abf56637d01c820b170c349ba53a0fbc93cda44b48b13s%3A32%3A%22r0GOvN4z80AlpM4eWKDa6w6AGNvkLlzx%22%3B; PHPSESSID=l40aqgq2er6hdo0tq6kjrmcqa1'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\Windows Live\\Shared\\;C:\\Android;C:\\adb;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseGit\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/marktroibags/marktroibags/backend/web/index.php'
+    'REMOTE_PORT' => '49838'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/marktroibags/marktroibags/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/marktroibags/marktroibags/backend/web/index.php'
+    'PHP_SELF' => '/marktroibags/marktroibags/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1439267716.966
+    'REQUEST_TIME' => 1439267716
+]
