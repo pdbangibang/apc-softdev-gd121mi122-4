@@ -23,48 +23,6 @@ AppAsset::register($this);
 </head>
 <body>
     <?php $this->beginBody() ?>
-    <div class="wrap">
-        <?php
-            NavBar::begin([
-                'brandLabel' => 'Marktroi Bags Online',
-                'brandUrl' => Yii::$app->homeUrl,
-                'options' => [
-                    'class' => 'navbar-inverse navbar-fixed-top',
-                ],
-            ]);
-            $menuItems = [
-                
-                ['label' => 'Products', 'url' => ['/product/index']],
-               //['label' => 'Promotion', 'url' => ['/promotion/index']],
-                ['label' => 'Report', 'url' => ['/report/index']],
-               // ['label' => 'Order Status', 'url' => ['/order/index']],
-               // ['label' => 'About', 'url' => ['/site/about']],
-               // ['label' => 'Contact', 'url' => ['/site/contact']],
-                
-                
-            ];
-            if (Yii::$app->user->isGuest) {
-                $menuItems[] = ['label' => 'Home', 'url' => Yii::$app->homeUrl];
-                //$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-                $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-            } else {
-                if(Yii::$app->user->identity->id == 1){
-                   
-                    $menuItems[] = ['label' => 'Orders List', 'url' => ['/order/index']];   
-                    $menuItems[] = ['label' => 'Manage Users', 'url' => ['/user/index']];                    
-                    $menuItems[] = ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']];
-                } else {                 
-                    $menuItems[] = ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']];    
-                }
-            }
-            echo Nav::widget([
-                'options' => ['class' => 'navbar-nav navbar-right'],
-                'items' => $menuItems,
-            ]);
-            NavBar::end();
-        ?>
-
-
         <div class="container">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
