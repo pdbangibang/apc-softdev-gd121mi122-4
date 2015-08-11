@@ -19,13 +19,20 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/site.css',
-		'css/bootstrap.min.css',
-		'fonts/css/font-awesome.min.css',
 		'css/animate.min.css',
+		'css/bootstrap.min.css',
 		'css/custom.css',
+		'css/floatexamples.css',
+		'css/ion.rangeSlider.css',
+		'css/ion.rangeSlider.skinFlat.css',
+		'css/normalize.css',
+		'css/nprogress.css',
+		
+		'fonts/css/font-awesome.min.css',
+		
 		'css/maps/jquery-jvectormap-2.0.1.css',
 		'css/icheck/flat/green.css',
-		'css/floatexamples.css',
+		
 		
     ];
     public $js = [
