@@ -10,6 +10,7 @@ $this->title = 'Login';
 
 ?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -41,10 +42,13 @@ $this->title = 'Login';
 >>>>>>> f7726b7b0b2b13daed37e2ad6c8f0e03f5b94708
 =======
 >>>>>>> 61a66c1f76703c7c344bc80e886c16b6afd25392
+=======
+
+>>>>>>> 5cf95c3be9ef053567f6236aa90f029b2616adfe
 <!DOCTYPE html>
 
 <html lang="en">
->>>>>>> b5a71c732e89993486621de34656a21d000d1846
+
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -102,6 +106,7 @@ $this->title = 'Login';
 						</div>
 						<div class="form-group">
 						<?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+<<<<<<< HEAD
 					</div>
 <<<<<<< HEAD
 
@@ -115,6 +120,9 @@ $this->title = 'Login';
 >>>>>>> f7726b7b0b2b13daed37e2ad6c8f0e03f5b94708
 >>>>>>> b5a71c732e89993486621de34656a21d000d1846
 >>>>>>> 61a66c1f76703c7c344bc80e886c16b6afd25392
+=======
+
+>>>>>>> 5cf95c3be9ef053567f6236aa90f029b2616adfe
             <?php ActiveForm::end(); ?>
                     <!-- form -->
                 </section>
@@ -122,6 +130,7 @@ $this->title = 'Login';
             </div>
             <div id="register" class="animate form">
                 <section class="login_content">
+<<<<<<< HEAD
 
                     <form>
                         <h1>Login Form</h1>
@@ -137,28 +146,12 @@ $this->title = 'Login';
                         </div>
                         <div class="clearfix"></div>
                         <div class="separator">
+=======
+>>>>>>> 5cf95c3be9ef053567f6236aa90f029b2616adfe
 
-                            <p class="change_link">New to site?
-                                <a href="#toregister" class="to_register"> Create Account </a>
-                            </p>
-                            <div class="clearfix"></div>
-                            <br />
-                            <div>
-                                <h1><i class="fa fa-paw" style="font-size: 26px;"></i> Gentelella Alela!</h1>
-
-                                <p>©2015 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
-                            </div>
-                        </div>
-                    </form>
-                    <!-- form -->
-                </section>
-                <!-- content -->
-            </div>
-            <div id="register" class="animate form">
-                <section class="login_content">
                     <form>
-                        <h1>Create Account</h1>
-                        <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+                        <h1>Login Form</h1>
+                         <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
                 <?= $form->field($model, 'username') ?>
                 <?= $form->field($model, 'password')->passwordInput() ?>
                 <?= $form->field($model, 'rememberMe')->checkbox() ?>
@@ -169,12 +162,6 @@ $this->title = 'Login';
                     <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
                 </div>
             <?php ActiveForm::end(); ?>
-                        <div class="clearfix"></div>
-                        <div class="separator">
-
-                            <p class="change_link">Already a member ?
-                                <a href="#tologin" class="to_register"> Log in </a>
-                            </p>
                             <div class="clearfix"></div>
                             <br />
                             <div>
@@ -193,9 +180,12 @@ $this->title = 'Login';
 
 </body>
 
+<<<<<<< HEAD
 </html>
 
 </html>
 
 </html>
 
+=======
+>>>>>>> 5cf95c3be9ef053567f6236aa90f029b2616adfe
