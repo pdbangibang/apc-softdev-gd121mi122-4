@@ -77,10 +77,7 @@ AppAsset::register($this);
                         </div>
                         <div class="profile_info">
                             <span>Welcome,</span>
-                            <?php if(Yii::$app->user->identity->id == 1){
-										['label' => Yii::$app->user->identity->username, 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']];
-									}
-							?> 
+                            
                         </div>
                     </div>
                     <!-- /menu prile quick info -->
@@ -97,7 +94,7 @@ AppAsset::register($this);
                                     
 									
                                 </li>
-                                <li><a href="index.php"><i class="fa fa-edit"></i> Products</a>
+                                <li><a data-scroll href="product/index"><i class="fa fa-edit"></i> Products</a>
                                     
                                 </li>
                                 <li><a><i class="fa fa-desktop"></i>Report</a>
