@@ -23,6 +23,10 @@ AppAsset::register($this);
 </head>
 <body>
     <?php $this->beginBody() ?>
+<<<<<<< HEAD
+    
+        
+=======
     <div class="wrap">
         <?php
             NavBar::begin([
@@ -49,7 +53,7 @@ AppAsset::register($this);
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
             } else {
                 if(Yii::$app->user->identity->id == 1){
-                    $menuItems[] = ['label' => 'Products', 'url' => ['/product/index']];
+                   
                     $menuItems[] = ['label' => 'Orders List', 'url' => ['/order/index']];   
                     $menuItems[] = ['label' => 'Manage Users', 'url' => ['/user/index']];                    
                     $menuItems[] = ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']];
@@ -63,6 +67,7 @@ AppAsset::register($this);
             ]);
             NavBar::end();
         ?>
+>>>>>>> f7726b7b0b2b13daed37e2ad6c8f0e03f5b94708
 
         <div class="container">
         <?= Breadcrumbs::widget([
@@ -71,7 +76,7 @@ AppAsset::register($this);
         <?= Alert::widget() ?>
         <?= $content ?>
         </div>
-    </div>
+    
 
     <footer class="footer">
         <div class="container">
