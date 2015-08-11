@@ -9,28 +9,9 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Login';
 
 ?>
-<<<<<<< HEAD
-<div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>Please fill out the following fields to login:</p>
-
-    <div class="row">
-        <div class="col-lg-5">
-            <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
-                <?= $form->field($model, 'username') ?>
-                <?= $form->field($model, 'password')->passwordInput() ?>
-                <?= $form->field($model, 'rememberMe')->checkbox() ?>
-                <div style="color:#999;margin:1em 0">
-                    If you forgot your password you can <?= Html::a('reset it', ['site/request-password-reset']) ?>.
-                </div>
-				 <div style="color:#999;margin:1em 0">
-                    Create an account <?= Html::a('here', ['site/signup']) ?>.
-                <div class="form-group">
-                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
-                </div>
-=======
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
@@ -38,7 +19,7 @@ $this->title = 'Login';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>GMarktroi Bags</title>
+    <title>Gentallela Alela! | </title>
 
     <!-- Bootstrap core CSS -->
 
@@ -75,20 +56,33 @@ $this->title = 'Login';
         <div id="wrapper">
             <div id="login" class="animate form">
                 <section class="login_content">
-                    
+                    <form>
                         <h1>Login Form</h1>
-                        <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
-							<?= $form->field($model, 'username') ?>
-							<?= $form->field($model, 'password')->passwordInput() ?>
-							<?= $form->field($model, 'rememberMe')->checkbox() ?>
-						<div style="color:#999;margin:1em 0">
-							If you forgot your password you can <?= Html::a('reset it', ['site/request-password-reset']) ?>.
-						</div>
-						<div class="form-group">
-						<?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
-					</div>
->>>>>>> 7cc860f1dfcb20c52ce1da9e1107d328e07446ff
-            <?php ActiveForm::end(); ?>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Username" required="" />
+                        </div>
+                        <div>
+                            <input type="password" class="form-control" placeholder="Password" required="" />
+                        </div>
+                        <div>
+                            <a class="btn btn-default submit" href="index.html">Log in</a>
+                            <a class="reset_pass" href="#">Lost your password?</a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="separator">
+
+                            <p class="change_link">New to site?
+                                <a href="#toregister" class="to_register"> Create Account </a>
+                            </p>
+                            <div class="clearfix"></div>
+                            <br />
+                            <div>
+                                <h1><i class="fa fa-paw" style="font-size: 26px;"></i> Gentelella Alela!</h1>
+
+                                <p>©2015 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                            </div>
+                        </div>
+                    </form>
                     <!-- form -->
                 </section>
                 <!-- content -->
@@ -97,18 +91,17 @@ $this->title = 'Login';
                 <section class="login_content">
                     <form>
                         <h1>Create Account</h1>
-                        <div>
-                            <input type="text" class="form-control" placeholder="Username" required="" />
-                        </div>
-                        <div>
-                            <input type="email" class="form-control" placeholder="Email" required="" />
-                        </div>
-                        <div>
-                            <input type="password" class="form-control" placeholder="Password" required="" />
-                        </div>
-                        <div>
-                            <a class="btn btn-default submit" href="index.html">Submit</a>
-                        </div>
+                        <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+                <?= $form->field($model, 'username') ?>
+                <?= $form->field($model, 'password')->passwordInput() ?>
+                <?= $form->field($model, 'rememberMe')->checkbox() ?>
+                <div style="color:#999;margin:1em 0">
+                    If you forgot your password you can <?= Html::a('reset it', ['site/request-password-reset']) ?>.
+                </div>
+                <div class="form-group">
+                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                </div>
+            <?php ActiveForm::end(); ?>
                         <div class="clearfix"></div>
                         <div class="separator">
 
