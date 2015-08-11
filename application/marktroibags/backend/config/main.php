@@ -6,6 +6,7 @@ $params = array_merge(
     require(__DIR__ . '/params-local.php')
 );
 
+
 return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
@@ -19,6 +20,7 @@ return [
 			'identityCookie' => [
                 'name' => '_backendUser', // unique for backend
             ]
+			//'returnUrl' => '/site/index',
         ],
 		'session' => [
             'name' => 'PHPBACKSESSID',
@@ -44,3 +46,8 @@ return [
     ],
     'params' => $params,
 ];
+
+return array(
+    'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
+    'name' => 'My application',
+    'defaultController' => 'web/index',); // <--- add this line and replace with correct controller/action
