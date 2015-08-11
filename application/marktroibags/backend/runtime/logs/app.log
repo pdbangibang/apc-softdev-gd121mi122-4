@@ -41786,6 +41786,7 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1428983963.734
     'REQUEST_TIME' => 1428983963
 ]
+<<<<<<< HEAD
 2015-08-11 02:31:20 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/request-password-reset' in C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Controller.php:122
 Stack trace:
 #0 C:\Users\Hanny\Desktop\SoftDev\softdevgd121mi122\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('request-passwor...', Array)
@@ -41953,11 +41954,25 @@ $_COOKIE = [
     'device_id' => '47583191391744080'
     '_csrf' => 'd5427df8e3a8662747a3fd1360d330748a44491415c726d70f4feeeb1060a8b3s:32:\"TCNWkRoNZDso6Aimx5eAPalTZupnKDlS\";'
     'PHPSESSID' => '0mp1t2dlr513jamffnruughjp5'
+=======
+2015-08-11 05:56:16 [::1][1][jmq5918l54l849mmmokab6s5f7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'AppAsset' not found' in C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\backend\views\site\index.php:4
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-08-11 05:56:16 [::1][1][jmq5918l54l849mmmokab6s5f7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'jmq5918l54l849mmmokab6s5f7'
+    '_csrf' => 'f32824c4fda52dbb45e70997f25480a1e43cab31e73ca2445a9bbe113b133719s:32:\"pbzqNuQ1CtNMjz2YidGuv1v7bcAnmmzT\";'
+    '_identity' => '29a4a5a17e23efd61b9d38c4ede11f3f304c0d140ad9dd99ae355433094b9d90s:46:\"[1,\"tboWIZFl47996Fcsfy57YXwS2QoWl8j8\",2592000]\";'
+>>>>>>> 7cc860f1dfcb20c52ce1da9e1107d328e07446ff
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/marktroibags/marktroibags/backend/web/assets/js/main.js'
+=======
+    '__id' => 1
+>>>>>>> 7cc860f1dfcb20c52ce1da9e1107d328e07446ff
 ]
 
 $_SERVER = [
@@ -41969,6 +41984,7 @@ $_SERVER = [
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
@@ -41981,6 +41997,20 @@ $_SERVER = [
     'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\WINDOWS'
+=======
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/marktroibags/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'fil,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=jmq5918l54l849mmmokab6s5f7; _csrf=f32824c4fda52dbb45e70997f25480a1e43cab31e73ca2445a9bbe113b133719s%3A32%3A%22pbzqNuQ1CtNMjz2YidGuv1v7bcAnmmzT%22%3B; _identity=29a4a5a17e23efd61b9d38c4ede11f3f304c0d140ad9dd99ae355433094b9d90s%3A46%3A%22%5B1%2C%22tboWIZFl47996Fcsfy57YXwS2QoWl8j8%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\TortoiseGit\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+>>>>>>> 7cc860f1dfcb20c52ce1da9e1107d328e07446ff
     'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8'
@@ -41993,6 +42023,7 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
+<<<<<<< HEAD
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/marktroibags/marktroibags/backend/web/index.php'
     'REMOTE_PORT' => '65380'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -42026,11 +42057,49 @@ $_COOKIE = [
     'device_id' => '47583191391744080'
     '_csrf' => 'd5427df8e3a8662747a3fd1360d330748a44491415c726d70f4feeeb1060a8b3s:32:\"TCNWkRoNZDso6Aimx5eAPalTZupnKDlS\";'
     'PHPSESSID' => 'lq497bes2d6o7vtpb9bjsrdi53'
+=======
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/marktroibags/backend/web/index.php'
+    'REMOTE_PORT' => '49583'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/marktroibags/backend/web/index.php'
+    'SCRIPT_NAME' => '/marktroibags/backend/web/index.php'
+    'PHP_SELF' => '/marktroibags/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1439265376.062
+    'REQUEST_TIME' => 1439265376
+]
+2015-08-11 06:07:51 [::1][1][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant username - assumed 'username'' in C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\backend\views\site\index.php:80
+Stack trace:
+#0 C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\backend\views\site\index.php(80): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', 'C:\\Users\\Leslie...', 80, Array)
+#1 C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\View.php(325): require('C:\\Users\\Leslie...')
+#2 C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\Users\\Leslie...', Array)
+#3 C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\Users\\Leslie...', Array, Object(backend\controllers\SiteController))
+#4 C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#5 C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\backend\controllers\SiteController.php(58): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#10 C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#11 C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-08-11 06:07:51 [::1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'jmq5918l54l849mmmokab6s5f7'
+    '_csrf' => 'f32824c4fda52dbb45e70997f25480a1e43cab31e73ca2445a9bbe113b133719s:32:\"pbzqNuQ1CtNMjz2YidGuv1v7bcAnmmzT\";'
+    '_identity' => '29a4a5a17e23efd61b9d38c4ede11f3f304c0d140ad9dd99ae355433094b9d90s:46:\"[1,\"tboWIZFl47996Fcsfy57YXwS2QoWl8j8\",2592000]\";'
+>>>>>>> 7cc860f1dfcb20c52ce1da9e1107d328e07446ff
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/marktroibags/marktroibags/backend/web/assets/js/main.js'
+=======
+    '__id' => 1
+>>>>>>> 7cc860f1dfcb20c52ce1da9e1107d328e07446ff
 ]
 
 $_SERVER = [
@@ -42042,6 +42111,7 @@ $_SERVER = [
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
@@ -42054,6 +42124,20 @@ $_SERVER = [
     'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\WINDOWS'
+=======
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/marktroibags/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'fil,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=jmq5918l54l849mmmokab6s5f7; _csrf=f32824c4fda52dbb45e70997f25480a1e43cab31e73ca2445a9bbe113b133719s%3A32%3A%22pbzqNuQ1CtNMjz2YidGuv1v7bcAnmmzT%22%3B; _identity=29a4a5a17e23efd61b9d38c4ede11f3f304c0d140ad9dd99ae355433094b9d90s%3A46%3A%22%5B1%2C%22tboWIZFl47996Fcsfy57YXwS2QoWl8j8%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\TortoiseGit\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+>>>>>>> 7cc860f1dfcb20c52ce1da9e1107d328e07446ff
     'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8'
@@ -42066,6 +42150,7 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
+<<<<<<< HEAD
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/marktroibags/marktroibags/backend/web/index.php'
     'REMOTE_PORT' => '65520'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -42090,6 +42175,33 @@ $_COOKIE = [
     'device_id' => '47583191391744080'
     '_csrf' => '459d08cffd39394a6c5abf56637d01c820b170c349ba53a0fbc93cda44b48b13s:32:\"r0GOvN4z80AlpM4eWKDa6w6AGNvkLlzx\";'
     'PHPSESSID' => 'l40aqgq2er6hdo0tq6kjrmcqa1'
+=======
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/marktroibags/backend/web/index.php'
+    'REMOTE_PORT' => '49877'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/marktroibags/backend/web/index.php'
+    'SCRIPT_NAME' => '/marktroibags/backend/web/index.php'
+    'PHP_SELF' => '/marktroibags/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1439266071.766
+    'REQUEST_TIME' => 1439266071
+]
+2015-08-11 06:10:20 [::1][1][jmq5918l54l849mmmokab6s5f7][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '.'' in C:\Users\Leslie\Documents\GitHub\apc-softdev-gd121mi122-4\application\marktroibags\backend\views\site\index.php:81
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-08-11 06:10:20 [::1][1][jmq5918l54l849mmmokab6s5f7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'jmq5918l54l849mmmokab6s5f7'
+    '_csrf' => 'f32824c4fda52dbb45e70997f25480a1e43cab31e73ca2445a9bbe113b133719s:32:\"pbzqNuQ1CtNMjz2YidGuv1v7bcAnmmzT\";'
+    '_identity' => '29a4a5a17e23efd61b9d38c4ede11f3f304c0d140ad9dd99ae355433094b9d90s:46:\"[1,\"tboWIZFl47996Fcsfy57YXwS2QoWl8j8\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+>>>>>>> 7cc860f1dfcb20c52ce1da9e1107d328e07446ff
 ]
 
 $_SERVER = [
@@ -42101,6 +42213,7 @@ $_SERVER = [
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
@@ -42112,6 +42225,20 @@ $_SERVER = [
     'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\WINDOWS'
+=======
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/marktroibags/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'fil,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=jmq5918l54l849mmmokab6s5f7; _csrf=f32824c4fda52dbb45e70997f25480a1e43cab31e73ca2445a9bbe113b133719s%3A32%3A%22pbzqNuQ1CtNMjz2YidGuv1v7bcAnmmzT%22%3B; _identity=29a4a5a17e23efd61b9d38c4ede11f3f304c0d140ad9dd99ae355433094b9d90s%3A46%3A%22%5B1%2C%22tboWIZFl47996Fcsfy57YXwS2QoWl8j8%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\TortoiseGit\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+>>>>>>> 7cc860f1dfcb20c52ce1da9e1107d328e07446ff
     'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8'
@@ -42124,6 +42251,7 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
+<<<<<<< HEAD
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/marktroibags/marktroibags/backend/web/index.php'
     'REMOTE_PORT' => '49838'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -42135,4 +42263,17 @@ $_SERVER = [
     'PHP_SELF' => '/marktroibags/marktroibags/backend/web/index.php'
     'REQUEST_TIME_FLOAT' => 1439267716.966
     'REQUEST_TIME' => 1439267716
+=======
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/marktroibags/backend/web/index.php'
+    'REMOTE_PORT' => '49953'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/marktroibags/backend/web/index.php'
+    'SCRIPT_NAME' => '/marktroibags/backend/web/index.php'
+    'PHP_SELF' => '/marktroibags/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1439266220.46
+    'REQUEST_TIME' => 1439266220
+>>>>>>> 7cc860f1dfcb20c52ce1da9e1107d328e07446ff
 ]
