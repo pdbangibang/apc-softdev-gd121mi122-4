@@ -9,6 +9,30 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Login';
 
 ?>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<div class="site-login">
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <p>Please fill out the following fields to login:</p>
+
+    <div class="row">
+        <div class="col-lg-5">
+            <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+                <?= $form->field($model, 'username') ?>
+                <?= $form->field($model, 'password')->passwordInput() ?>
+                <?= $form->field($model, 'rememberMe')->checkbox() ?>
+                <div style="color:#999;margin:1em 0">
+                    If you forgot your password you can <?= Html::a('reset it', ['site/request-password-reset']) ?>.
+                </div>
+				 <div style="color:#999;margin:1em 0">
+                    Create an account <?= Html::a('here', ['site/signup']) ?>.
+                <div class="form-group">
+                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                </div>
+=======
+>>>>>>> f7726b7b0b2b13daed37e2ad6c8f0e03f5b94708
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -66,6 +90,10 @@ $this->title = 'Login';
 						<div class="form-group">
 						<?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
 					</div>
+<<<<<<< HEAD
+=======
+>>>>>>> 7cc860f1dfcb20c52ce1da9e1107d328e07446ff
+>>>>>>> f7726b7b0b2b13daed37e2ad6c8f0e03f5b94708
             <?php ActiveForm::end(); ?>
                     <!-- form -->
                 </section>
@@ -111,4 +139,8 @@ $this->title = 'Login';
 
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> f7726b7b0b2b13daed37e2ad6c8f0e03f5b94708
