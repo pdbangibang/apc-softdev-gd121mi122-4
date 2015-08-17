@@ -1,6 +1,6 @@
 <?php
 
-use kartik\helpers\Html;
+use yii\helpers\Html;
 use kartik\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
@@ -23,7 +23,7 @@ $this->title = 'Login';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentallela Alela! | </title>
+    <title>Login </title>
 
     <!-- Bootstrap core CSS -->
 
@@ -61,7 +61,6 @@ $this->title = 'Login';
             <div id="login" class="animate form">
                 <section class="login_content">
 
-<<<<<<< HEAD
                     
                         <h1>Login Form</h1>
                         <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
@@ -99,7 +98,6 @@ $this->title = 'Login';
                     <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
                 </div>
             <?php ActiveForm::end(); ?>
-=======
                    <?php 
     $form = ActiveForm::begin([
         'id' => 'login-form-vertical', 
@@ -114,13 +112,12 @@ $this->title = 'Login';
         <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
     </div>
 <?php ActiveForm::end(); ?>
->>>>>>> 1a27984037ba9f29cd36a795696c33c97a1e868e
                             <div class="clearfix"></div>
                             <br />
                             <div>
-                                <h1><i class="fa fa-paw" style="font-size: 26px;"></i> Gentelella Alela!</h1>
+                                <h1><i class="fa fa-paw" style="font-size: 26px;"></i> Mark Troi Bags</h1>
 
-                                <p>©2015 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                                <p>©2015 All Rights Reserved.</p>
                             </div>
                         </div>
                     </form>

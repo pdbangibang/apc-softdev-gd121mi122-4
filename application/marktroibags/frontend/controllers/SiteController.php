@@ -1,7 +1,7 @@
 <?php
 namespace frontend\controllers;
 
-use Yii2;
+use Yii;
 use app\models\Kartik;
 use common\models\LoginForm;
 use common\models\UserDet;
