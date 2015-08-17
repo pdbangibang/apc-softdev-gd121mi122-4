@@ -6,7 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'yii\\swiftmailer\\' => array($vendorDir . '/yiisoft/yii2-swiftmailer'),
     'yii\\gii\\' => array($vendorDir . '/yiisoft/yii2-gii'),
     'yii\\faker\\' => array($vendorDir . '/yiisoft/yii2-faker'),
     'yii\\debug\\' => array($vendorDir . '/yiisoft/yii2-debug'),
@@ -32,6 +31,7 @@ return array(
     'kartik\\growl\\' => array($vendorDir . '/kartik-v/yii2-widget-growl'),
     'kartik\\form\\' => array($vendorDir . '/kartik-v/yii2-widget-activeform'),
     'kartik\\file\\' => array($vendorDir . '/kartik-v/yii2-widget-fileinput'),
+    'kartik\\dropdown\\' => array($vendorDir . '/kartik-v/yii2-dropdown-x'),
     'kartik\\depdrop\\' => array($vendorDir . '/kartik-v/yii2-widget-depdrop'),
     'kartik\\datetime\\' => array($vendorDir . '/kartik-v/yii2-widget-datetimepicker'),
     'kartik\\date\\' => array($vendorDir . '/kartik-v/yii2-widget-datepicker'),

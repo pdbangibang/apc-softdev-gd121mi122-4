@@ -19,14 +19,7 @@ use yii\filters\AccessControl;
 /**
  * Site controller
  */
- class KartikController extends Controller
-{
-    public function actionIndex()
-    {
-        $model = Kartik::find()->one();
-        return $this->render('index', ['model' => $model]);
-    }
-}
+ 
 class SiteController extends Controller
 {
     /**
@@ -179,5 +172,7 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+	
+	
 
 }

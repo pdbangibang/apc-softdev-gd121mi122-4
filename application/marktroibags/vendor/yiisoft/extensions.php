@@ -3,15 +3,6 @@
 $vendorDir = dirname(__DIR__);
 
 return array (
-  'yiisoft/yii2-swiftmailer' => 
-  array (
-    'name' => 'yiisoft/yii2-swiftmailer',
-    'version' => '2.0.2.0',
-    'alias' => 
-    array (
-      '@yii/swiftmailer' => $vendorDir . '/yiisoft/yii2-swiftmailer',
-    ),
-  ),
   'yiisoft/yii2-codeception' => 
   array (
     'name' => 'yiisoft/yii2-codeception',
@@ -244,6 +235,15 @@ return array (
     'alias' => 
     array (
       '@kartik/widgets' => $vendorDir . '/kartik-v/yii2-widgets',
+    ),
+  ),
+  'kartik-v/yii2-dropdown-x' => 
+  array (
+    'name' => 'kartik-v/yii2-dropdown-x',
+    'version' => '1.2.0.0',
+    'alias' => 
+    array (
+      '@kartik/dropdown' => $vendorDir . '/kartik-v/yii2-dropdown-x',
     ),
   ),
 );

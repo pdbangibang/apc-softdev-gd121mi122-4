@@ -1,6 +1,14 @@
 <?php
 /* @var $this yii\web\View */
 $this->title = 'Marktroi Bags';
+
+use yii\helpers\Html;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
+use yii\widgets\Breadcrumbs;
+use frontend\assets\AppAsset;
+use frontend\widgets\Alert;
+use kartik\dropdown\DropdownX;
 ?>
 
 <html class="no-js">
@@ -56,23 +64,52 @@ $this->title = 'Marktroi Bags';
                         <div class="nav">
                             <a href="#" data-placement="bottom" title="Menu" class="menu" data-toggle="dropdown"><i class="pe-7s-menu"></i></a>
                              <div class="dropdown-menu">
-                                 <div class="arrow-up"></div>
-                                 <ul>
-									
-                                     <li><a data-scroll href="<?php 
-									if (Yii::$app->user->isGuest) {
-										$menuItems = 
-										[
-										['label' => 'Home', 'url' => Yii::$app->homeUrl],
-										];
-									 }
-									 ?>">Home <i class="pe-7s-home"></i></a><span class="menu-effect"></span></li>
-									 
-                                     <li><a data-scroll href="product/index">Products <i class="pe-7s-config"></i></a><span class="menu-effect"></span></li>
-                                     <li><a data-scroll href="site/about">About <i class="pe-7s-glasses"></i></a><span class="menu-effect"></span></li>
-                                     <li><a data-scroll href="site/contact">Contact <i class="pe-7s-comment"></i><span class="menu-effect"></span></a></li>
-                                     <li><a data-scroll href="site/signup">Sign Up <i class="pe-7s-help1"></i></a><span class="menu-effect"></span></li>
-                                 </ul>
+                                 <?php
+            NavBar::begin([
+                'brandLabel' => 'Marktroi Bags',
+                'brandUrl' => Yii::$app->homeUrl,
+                'options' => [
+                    'class' => 'navbar-inverse navbar-fixed-top',
+                ],
+            ]);
+
+
+            if (Yii::$app->user->isGuest) {
+                    $menuItems = 
+                    [
+                    ['label' => 'Home', 'url' => Yii::$app->homeUrl],
+                    ['label' => 'Products', 'url' => ['/product/index']],
+                    ['label' => 'About Us', 'url' => ['/site/about']],
+                    ['label' => 'Contact Us', 'url' => ['/site/contact']],
+                    ['label' => 'Register', 'url' => ['/site/signup']],
+                    ['label' => 'Login', 'url' => ['/site/login']],
+                ];
+
+                } else {
+                if(Yii::$app->user->identity->id == 1){
+                    $menuItems[] = ['label' => '', 'items' => [
+                    ['label' => 'Manage', 'url' => [Yii::$app->homeUrl.'../']],                    
+                    ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']]
+                ]];
+                } else {
+                    $menuItems = 
+                    [
+                    ['label' => 'Home', 'url' => Yii::$app->homeUrl],
+                    ['label' => 'Products', 'url' => ['/product/index']],
+                    ['label' => 'My Orders', 'url' => ['/order/index']],
+                    ['label' => 'About Us', 'url' => ['/site/about']],
+                    ['label' => 'Contact Us', 'url' => ['/site/contact']],
+                    ['label' => 'My Account', 'url' => ['/user/view/'.Yii::$app->user->identity->id]],                    
+                    ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']],
+                ];    
+                }
+            }
+            echo Nav::widget([
+                'options' => ['class' => 'navbar-nav navbar-right'],
+                'items' => $menuItems,
+            ]);
+            NavBar::end();
+        ?>
                              </div>
                         </div>
                     </div>
