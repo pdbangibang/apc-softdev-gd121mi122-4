@@ -1,6 +1,7 @@
 <?php
-use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
+
+use kartik\helpers\Html;
+use kartik\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
@@ -60,6 +61,7 @@ $this->title = 'Login';
             <div id="login" class="animate form">
                 <section class="login_content">
 
+<<<<<<< HEAD
                     
                         <h1>Login Form</h1>
                         <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
@@ -97,6 +99,22 @@ $this->title = 'Login';
                     <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
                 </div>
             <?php ActiveForm::end(); ?>
+=======
+                   <?php 
+    $form = ActiveForm::begin([
+        'id' => 'login-form-vertical', 
+        'type' => ActiveForm::TYPE_VERTICAL
+    ]); 
+?>
+    <?= $form->field($model, 'username') ?>
+    <?= $form->field($model, 'password')->passwordInput() ?>
+    <?= $form->field($model, 'rememberMe')->checkbox() ?>
+    <div class="form-group">
+        <?= Html::submitButton('Login', ['class' => 'btn btn-primary']) ?>
+        <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
+    </div>
+<?php ActiveForm::end(); ?>
+>>>>>>> 1a27984037ba9f29cd36a795696c33c97a1e868e
                             <div class="clearfix"></div>
                             <br />
                             <div>

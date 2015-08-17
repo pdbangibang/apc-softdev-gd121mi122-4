@@ -1,7 +1,8 @@
 <?php
 namespace frontend\controllers;
 
-use Yii;
+use Yii2;
+use app\models\Kartik;
 use common\models\LoginForm;
 use common\models\UserDet;
 use common\models\UserDetSearch;
@@ -18,6 +19,14 @@ use yii\filters\AccessControl;
 /**
  * Site controller
  */
+ class KartikController extends Controller
+{
+    public function actionIndex()
+    {
+        $model = Kartik::find()->one();
+        return $this->render('index', ['model' => $model]);
+    }
+}
 class SiteController extends Controller
 {
     /**
