@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 11, 2015 at 06:57 AM
+-- Generation Time: Aug 17, 2015 at 03:40 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -27,7 +27,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `admin` (
-  `id` int(11) NOT NULL DEFAULT '0',
+  `idNo` int(11) NOT NULL,
+  `id` int(11) NOT NULL DEFAULT '1',
   `fname` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `lname` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `contact_no` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -43,16 +44,18 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `status` smallint(6) NOT NULL DEFAULT '10',
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`id`, `fname`, `lname`, `contact_no`, `username`, `company_name`, `company_description`, `shipping_address`, `auth_key`, `role`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`) VALUES
-(11, 'admin', 'admin', '12345', 'admin', 'APC', NULL, 'Humabon Magallanes', 'y3LLXm_G6JEYj82dUoAMomogA0rIu20m', 0, '$2y$13$KUkjhvylbwknrw8z7p6uLuE4TfgF8RDgwXFQPdaq7FTsn.vo0cH8W', NULL, 'demonstration@apc.edu.ph', 10, 1427533223, 1427533223),
-(12, 'Leslie', 'Samonte', '09268869977', 'lsamonte', 'apc', NULL, '123 lala city', 'wymuQbrm3jFvABjCrJzM0U7I8SQoZOnc', 0, '$2y$13$Jm.hhSoOZ.K8LBSD8kWOEeHuu6RESLnyu4bTKUh6bxnb3bVIsbCG2', NULL, 'lesliemsamonte@gmail.com', 10, 1436846904, 1436846904),
-(13, 'Hannah', 'Bangibang', '7296621', 'admin01', 'APC', NULL, 'makati City', '6aQ_hVbNjK0BBJBB49vgIZ3_C4NgD0nS', 0, '$2y$13$BgferM9NlFcS2qejGXduZuhBjgRSe4JjIxk77MjVZVXnwZHMhd1BW', NULL, 'hannahbangibang@gmail.com', 10, 1439265833, 1439265833);
+INSERT INTO `admin` (`idNo`, `id`, `fname`, `lname`, `contact_no`, `username`, `company_name`, `company_description`, `shipping_address`, `auth_key`, `role`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`) VALUES
+(1, 1, 'Princess', 'Admin', '7296621', 'admin1', 'APC', NULL, 'makati City', 'sBJ1NJnnxEP6FcIlQPF8Ug_C_T_8b-SN', 0, '$2y$13$szoCnZ66mthjEOZG6aUx/.hdQAdPg8YJ5kWxwiwelLVixTQ2dmlw2', NULL, 'pdbangibang@student.apc.edu.ph', 10, 1439801093, 1439801093),
+(2, 1, 'admin', 'admin', '12345', 'admin', 'APC', NULL, 'Humabon Magallanes', 'y3LLXm_G6JEYj82dUoAMomogA0rIu20m', 0, '$2y$13$KUkjhvylbwknrw8z7p6uLuE4TfgF8RDgwXFQPdaq7FTsn.vo0cH8W', NULL, 'demonstration@apc.edu.ph', 10, 1427533223, 1427533223),
+(3, 1, 'Leslie', 'Samonte', '09268869977', 'lsamonte', 'apc', NULL, '123 lala city', 'wymuQbrm3jFvABjCrJzM0U7I8SQoZOnc', 0, '$2y$13$Jm.hhSoOZ.K8LBSD8kWOEeHuu6RESLnyu4bTKUh6bxnb3bVIsbCG2', NULL, 'lesliemsamonte@gmail.com', 10, 1436846904, 1436846904),
+(4, 1, 'Hannah', 'Bangibang', '7296621', 'admin01', 'APC', NULL, 'makati City', '6aQ_hVbNjK0BBJBB49vgIZ3_C4NgD0nS', 0, '$2y$13$BgferM9NlFcS2qejGXduZuhBjgRSe4JjIxk77MjVZVXnwZHMhd1BW', NULL, 'hannahbangibang@gmail.com', 10, 1439265833, 1439265833),
+(13, 1, 'Princess', 'Hannah', '7296621', 'admin02', 'BDO', NULL, 'bangkal, makati city', 'X6dKo9eLK1iVFCq6LO3t3Q9hKv6eJfmY', 0, '$2y$13$Qd2rRqFNg3N8rMnDzD04iu4f/Qv/qwdFfaSZprwf2wIsLHYyEazo2', NULL, 'hannybee13@yahoo.com', 10, 1439818629, 1439818629);
 
 -- --------------------------------------------------------
 
@@ -89,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `order` (
   `shippingaddress` varchar(100) NOT NULL,
   `date` varchar(45) NOT NULL,
   `status` varchar(200) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `order`
@@ -185,7 +188,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `status` smallint(6) NOT NULL DEFAULT '10',
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `user`
@@ -197,7 +200,9 @@ INSERT INTO `user` (`id`, `fname`, `lname`, `contact_no`, `username`, `company_n
 (3, 'Leslie', 'Samonte', '09268869977', 'lsamonte', 'apc', NULL, '123 lala city', 'wymuQbrm3jFvABjCrJzM0U7I8SQoZOnc', 0, '$2y$13$Jm.hhSoOZ.K8LBSD8kWOEeHuu6RESLnyu4bTKUh6bxnb3bVIsbCG2', NULL, 'lesliemsamonte@gmail.com', 10, 1436846904, 1436846904),
 (4, 'Hannah', 'Bangibang', '7296621', 'admin01', 'APC', NULL, 'makati City', '6aQ_hVbNjK0BBJBB49vgIZ3_C4NgD0nS', 0, '$2y$13$BgferM9NlFcS2qejGXduZuhBjgRSe4JjIxk77MjVZVXnwZHMhd1BW', NULL, 'hannahbangibang@gmail.com', 10, 1439265833, 1439265833),
 (6, 'demo', 'demo', 'demo', 'demo', 'APC', NULL, 'Humabon Magallanes', '8urHe0RqNuerCN2oPGM9jvpBCKRiVPjY', 0, '$2y$13$KoNYWb8Nx07dLsnIHPPOKePg5E2B2AQsqMUrcuOdiqcupR88g.cPW', NULL, 'demonstration2@apc.edu.ph', 10, 1427533355, 1427533355),
-(7, 'Troi', 'Bolton', '12345', 'user1', 'user1 company', NULL, 'Bangkal', 'Nc_im7-2piRLyph_cr2WG5Zt0VeqofqR', 0, '$2y$13$z7hDHk.Xq4CeYk8OITzY2.igleNeU/sL0cz3b0HqYvEhB0yamz.7u', NULL, 'user1@gmail.com', 10, 1428468788, 1428468788);
+(7, 'Troi', 'Bolton', '12345', 'user1', 'user1 company', NULL, 'Bangkal', 'Nc_im7-2piRLyph_cr2WG5Zt0VeqofqR', 0, '$2y$13$z7hDHk.Xq4CeYk8OITzY2.igleNeU/sL0cz3b0HqYvEhB0yamz.7u', NULL, 'user1@gmail.com', 10, 1428468788, 1428468788),
+(9, 'Princess', 'Hannah', '7296621', 'admin02', 'BDO', NULL, 'bangkal, makati city', 'yBJXz5U8qVB5YCT3BitTbo432CWjm7Pi', 0, '$2y$13$1m/GgbU0NjgQasWPAhToc.ck26VrtheNloAF7DLvJ94NtG.m5A4i6', NULL, 'hannybee13@yahoo.com', 10, 1439818629, 1439818629),
+(10, 'test', 'test', '1234567', 'test01', 'school', NULL, 'makati city', 'P6WnsHQG1nyUuk1WSLz6kKwRVoLn7_4Q', 0, '$2y$13$RzDfn9EBPiYL.7MfIlZvC.ytXq5fyJZ8VB7Q/x7jucjCphn8irrry', NULL, 'test@gmail.com', 10, 1439818731, 1439818731);
 
 --
 -- Indexes for dumped tables
@@ -207,7 +212,7 @@ INSERT INTO `user` (`id`, `fname`, `lname`, `contact_no`, `username`, `company_n
 -- Indexes for table `admin`
 --
 ALTER TABLE `admin`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`idNo`);
 
 --
 -- Indexes for table `migration`
@@ -250,10 +255,15 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `idNo` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
+--
 -- AUTO_INCREMENT for table `order`
 --
 ALTER TABLE `order`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `product`
 --
@@ -273,7 +283,7 @@ ALTER TABLE `report`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- Constraints for dumped tables
 --

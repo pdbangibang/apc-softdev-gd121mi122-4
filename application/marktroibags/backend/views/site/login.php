@@ -1,6 +1,6 @@
 <?php
 
-use kartik\helpers\Html;
+use yii\helpers\Html;
 use kartik\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
@@ -23,7 +23,7 @@ $this->title = 'Login';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentallela Alela! | </title>
+    <title>Login </title>
 
     <!-- Bootstrap core CSS -->
 
@@ -61,6 +61,43 @@ $this->title = 'Login';
             <div id="login" class="animate form">
                 <section class="login_content">
 
+                    
+                        <h1>Login Form</h1>
+                        <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+							<?= $form->field($model, 'username') ?>
+							<?= $form->field($model, 'password')->passwordInput() ?>
+							<?= $form->field($model, 'rememberMe')->checkbox() ?>
+						<div style="color:#999;margin:1em 0">
+							If you forgot your password you can <?= Html::a('reset it', ['site/request-password-reset']) ?>.
+						</div>
+						<div style="color:#999;margin:1em 0">
+							Don't have an account? <?= Html::a('Sign Up', ['site/signup']) ?>.
+						</div>
+						
+						<div class="form-group">
+						<?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+
+            <?php ActiveForm::end(); ?>
+                    <!-- form -->
+                </section>
+                <!-- content -->
+            </div>
+            <div id="register" class="animate form">
+                <section class="login_content">
+
+                    <form>
+                        <h1>Login Form</h1>
+                         <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+                <?= $form->field($model, 'username') ?>
+                <?= $form->field($model, 'password')->passwordInput() ?>
+                <?= $form->field($model, 'rememberMe')->checkbox() ?>
+                <div style="color:#999;margin:1em 0">
+                    If you forgot your password you can <?= Html::a('reset it', ['site/request-password-reset']) ?>.
+                </div>
+                <div class="form-group">
+                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                </div>
+            <?php ActiveForm::end(); ?>
                    <?php 
     $form = ActiveForm::begin([
         'id' => 'login-form-vertical', 
@@ -78,9 +115,9 @@ $this->title = 'Login';
                             <div class="clearfix"></div>
                             <br />
                             <div>
-                                <h1><i class="fa fa-paw" style="font-size: 26px;"></i> Gentelella Alela!</h1>
+                                <h1><i class="fa fa-paw" style="font-size: 26px;"></i> Mark Troi Bags</h1>
 
-                                <p>©2015 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                                <p>©2015 All Rights Reserved.</p>
                             </div>
                         </div>
                     </form>
