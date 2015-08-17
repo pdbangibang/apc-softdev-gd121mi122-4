@@ -19,6 +19,7 @@ class SignupForm extends Model
 	public $company_name;
 	public $company_description;
 	public $shipping_address;
+	public $captcha;
 
     /**
      * @inheritdoc

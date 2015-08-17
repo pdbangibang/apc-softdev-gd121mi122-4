@@ -16,7 +16,7 @@ return [
     'components' => [
         'user' => [
             'identityClass' => 'common\models\Admin',
-            'enableAutoLogin' => true,
+            'enableAutoLogin' => false,
 			'identityCookie' => [
                 'name' => '_backendUser', // unique for backend
             ]
@@ -47,7 +47,3 @@ return [
     'params' => $params,
 ];
 
-return array(
-    'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'My application',
-    'defaultController' => 'web/index',); // <--- add this line and replace with correct controller/action

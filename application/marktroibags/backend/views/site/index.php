@@ -3,13 +3,14 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use frontend\assets\AppAsset;
+use backend\assets\AppAsset;
 use frontend\widgets\Alert;
+use backend\controllers\SiteController
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-AppAsset::register($this);
+//AppAsset::register($this);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +22,7 @@ AppAsset::register($this);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentallela Alela! | </title>
+    <title>Mark Troi Bgas! | </title>
 
     <!-- Bootstrap core CSS -->
 
@@ -66,7 +67,7 @@ AppAsset::register($this);
                 <div class="left_col scroll-view">
 
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+                        <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Mark Troi Bags</span></a>
                     </div>
                     <div class="clearfix"></div>
 
@@ -96,10 +97,7 @@ AppAsset::register($this);
                                 </li>
 
                                 <li><a data-scroll href="product/index.php"><i class="fa fa-edit"></i> Products</a>
-
-                                <li><a data-scroll href="product/index"><i class="fa fa-edit"></i> Products</a>
-
-                                    
+   
                                 </li>
                                 <li><a><i class="fa fa-desktop"></i>Report</a>
                                     
@@ -163,7 +161,7 @@ AppAsset::register($this);
                                     <li>
                                         <a href="javascript:;">Help</a>
                                     </li>
-                                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                                    <li><a href="site/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
                                     </li>
                                 </ul>
                             </li>

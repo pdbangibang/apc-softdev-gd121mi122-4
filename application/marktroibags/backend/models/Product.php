@@ -74,8 +74,8 @@ class Product extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getUsername()
-    {
-        return $this->hasOne(Username::className(), ['id' => 'username']);
-    }
+   // public function getUsername()
+    //{
+     //   return $this->hasOne(Username::className(), ['id' => 'username']);
+    //}
 }
