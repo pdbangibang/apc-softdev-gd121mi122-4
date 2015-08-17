@@ -48,12 +48,10 @@ use kartik\dropdown\DropdownX;
                 <h1 class="bigheadline">Marktroi Bags</h1>
                <!-- <h4 class="subheadline">The Worst Front End Developer</h4> -->
             </div>
-            <div class="bottom">
-                <a data-scroll href="#navigation" class="scrollDown animated pulse" id="scrollToContent"><i class="pe-7s-angle-down-circle pe-va"></i></a>
-            </div>
+            
         </header>
 
-        <!-- Navigation area -->
+        <!-- Navigation area -
         <section id="navigation">
             <div class="container">
                 <div class="row">
@@ -64,52 +62,7 @@ use kartik\dropdown\DropdownX;
                         <div class="nav">
                             <a href="#" data-placement="bottom" title="Menu" class="menu" data-toggle="dropdown"><i class="pe-7s-menu"></i></a>
                              <div class="dropdown-menu">
-                                 <?php
-            NavBar::begin([
-                'brandLabel' => 'Marktroi Bags',
-                'brandUrl' => Yii::$app->homeUrl,
-                'options' => [
-                    'class' => 'navbar-inverse navbar-fixed-top',
-                ],
-            ]);
-
-
-            if (Yii::$app->user->isGuest) {
-                    $menuItems = 
-                    [
-                    ['label' => 'Home', 'url' => Yii::$app->homeUrl],
-                    ['label' => 'Products', 'url' => ['/product/index']],
-                    ['label' => 'About Us', 'url' => ['/site/about']],
-                    ['label' => 'Contact Us', 'url' => ['/site/contact']],
-                    ['label' => 'Register', 'url' => ['/site/signup']],
-                    ['label' => 'Login', 'url' => ['/site/login']],
-                ];
-
-                } else {
-                if(Yii::$app->user->identity->id == 1){
-                    $menuItems[] = ['label' => '', 'items' => [
-                    ['label' => 'Manage', 'url' => [Yii::$app->homeUrl.'../']],                    
-                    ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']]
-                ]];
-                } else {
-                    $menuItems = 
-                    [
-                    ['label' => 'Home', 'url' => Yii::$app->homeUrl],
-                    ['label' => 'Products', 'url' => ['/product/index']],
-                    ['label' => 'My Orders', 'url' => ['/order/index']],
-                    ['label' => 'About Us', 'url' => ['/site/about']],
-                    ['label' => 'Contact Us', 'url' => ['/site/contact']],
-                    ['label' => 'My Account', 'url' => ['/user/view/'.Yii::$app->user->identity->id]],                    
-                    ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']],
-                ];    
-                }
-            }
-            echo Nav::widget([
-                'options' => ['class' => 'navbar-nav navbar-right'],
-                'items' => $menuItems,
-            ]);
-            NavBar::end();
-        ?>
+                                 
                              </div>
                         </div>
                     </div>
@@ -120,7 +73,7 @@ use kartik\dropdown\DropdownX;
         
         <!-- Content Area -->
 
-       <!-- Portfolio Area -->
+       <!-- Portfolio Area 
 
         <section id="portfolio" class="portfolio-area">
             <div class="container">
@@ -184,7 +137,7 @@ use kartik\dropdown\DropdownX;
                         <div class="btn-center"><a href="product/index" class="big button">View all</a></div>
                     </div>
                 </div>
-            </div><!-- container -->
+            </div><!-- container 
         </section><!-- portfolio -->
 
         <!-- Testimonial Area
@@ -226,7 +179,7 @@ use kartik\dropdown\DropdownX;
 
         
 
-        <!-- Footer Area -->
+        <!-- Footer Area 
 
         <footer>
             <div class="container">
@@ -237,6 +190,7 @@ use kartik\dropdown\DropdownX;
                 </div>
             </div>
         </footer>
+		<!-- Footer Area -->
 
         <!-- Necessery scripts -->
         <script src="assets/js/jquery-2.1.3.min.js"></script>

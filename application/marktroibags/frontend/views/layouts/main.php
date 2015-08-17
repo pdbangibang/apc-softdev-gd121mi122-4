@@ -23,13 +23,12 @@ AppAsset::register($this);
 </head>
 <body>
     <?php $this->beginBody() ?>
-    <div class="wrap">
-        <?php
+                                 <?php
             NavBar::begin([
-                'brandLabel' => 'Marktroi Bags',
+                
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
-                    'class' => 'navbar-inverse navbar-fixed-top',
+                    'class' => 'my-navbar navbar-fixed-top',
                 ],
             ]);
 
@@ -71,21 +70,19 @@ AppAsset::register($this);
             NavBar::end();
         ?>
 
-  
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
+                 
         <?= $content ?>
 
-    </div>
 
+
+<!-- Footer Area 
     <footer class="footer">
         <div class="container">
         <p class="pull-left">&copy; Marktroi Bags Online <?= date('Y') ?></p>
         <p class="pull-right"><?= Yii::powered() ?></p>
         </div>
     </footer>
+	<!-- Footer Area -->
 
     <?php $this->endBody() ?>
 </body>
