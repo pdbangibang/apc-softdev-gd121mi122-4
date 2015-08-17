@@ -2,6 +2,7 @@
 namespace backend\models;
 
 use common\models\Admin;
+use common\models\User;
 use yii\base\Model;
 use Yii;
 
@@ -70,8 +71,21 @@ class SignupForm extends Model
 			$user->company_description = $this->company_description;
 			$user->shipping_address = $this->shipping_address;
             $user->generateAuthKey();
-            if ($user->save()) {
+			$user1 = new User();
+			$user1->fname = $this->fname;
+			$user1->lname = $this->lname;
+			$user1->contact_no = $this->contact_no;
+            $user1->username = $this->username;
+            $user1->email = $this->email;
+            $user1->setPassword($this->password);
+			$user1->company_name = $this->company_name;
+			$user1->company_description = $this->company_description;
+			$user1->shipping_address = $this->shipping_address;
+            $user1->generateAuthKey();
+
+            if ($user->save() && $user1->save()) {
                 return $user;
+				return user1;
             }
         }
 

@@ -101,7 +101,7 @@ public function actionSignup()
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
                 if (Yii::$app->getUser()->login($user)) {
-                    return $this-> login();
+                    return $this-> goHome();
                 }
             }
         }

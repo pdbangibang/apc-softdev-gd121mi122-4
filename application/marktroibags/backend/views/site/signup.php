@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-use yii\captcha\Captcha;
+;
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
@@ -27,7 +27,8 @@ $this->params['breadcrumbs'][] = $this->title;
 				<?= $form->field($model, 'company_name') ?>
 				<?= $form->field($model, 'company_description') ?>
 				<?= $form->field($model, 'shipping_address') ?>
-				<?= $form->field($model, 'captcha')->widget(Captcha::className()) ?>
+				
+				
                 <div class="form-group">
                     <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
                 </div>
