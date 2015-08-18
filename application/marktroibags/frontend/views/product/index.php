@@ -43,7 +43,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="row port cs-style-3">
                     <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                         <figure>
-                            <center><img src="uploads/p1.jpg" alt="img04"></center>
+                            <center><img src="view/uploads/1.jpg" alt="img04"></center>
                             <figcaption>
                                 <h3>Backpack</h3>
                                 <a href="view/6" class="button" >Take a look</a>
@@ -52,7 +52,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                         <figure>
-                            <img src="uploads/p2.jpg" alt="img01">
+                            <img src="view/uploads/2.jpg" alt="img01">
                             <figcaption>
                                 <h3>Backpack</h3>
                                 <a href="view/7" class="button" >Take a look</a>
@@ -61,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                         <figure>
-                            <img src="uploads/p3.jpg" alt="img02">
+                            <img src="view/uploads/3.jpg" alt="img02">
                             <figcaption>
                                 <h3>Duffel Bag</h3>
                                 <a href="view/8" class="button" >Take a look</a>
@@ -70,7 +70,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                         <figure>
-                            <img src="uploads/p4.jpg" alt="img04">
+                            <img src="view/uploads/4.jpg" alt="img04">
                             <figcaption>
                                 <h3>Shoulder Bag</h3>
                                 <a href="view/9" class="button" >Take a look</a>
@@ -79,7 +79,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                         <figure>
-                            <img src="uploads/p5.jpg" alt="img01">
+                            <img src="view/uploads/5.jpg" alt="img01">
                             <figcaption>
                                 <h3>Purse</h3>
                                 <a href="view/10" class="button" >Take a look</a>
@@ -88,7 +88,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                         <figure>
-                            <img src="uploads/p6.jpg" alt="img02">
+                            <img src="view/uploads/6.jpg" alt="img02">
                             <figcaption>
                                 <h3>Laptop</h3>
                                 <a href="view/11" class="button" >Take a look</a>
@@ -98,6 +98,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
             </div><!-- container -->
         </section>
+		</div>
+		<!--
 	 <footer>
             <div class="container">
                 <div class="row">
@@ -106,7 +108,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
 
         <!-- Necessery scripts -->
         <script src="assets/js/jquery-2.1.3.min.js"></script>
