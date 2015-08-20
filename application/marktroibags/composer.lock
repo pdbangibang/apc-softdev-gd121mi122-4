@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c51628b3d64280af69be07a8d680b004",
+    "hash": "1f595007a9d1b448a6160136dc01c3fc",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -586,6 +586,57 @@
             "time": "2014-12-08 04:31:32"
         },
         {
+            "name": "kartik-v/yii2-field-range",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-field-range.git",
+                "reference": "095d260eecb86ff2e78a70775011cec00a75df98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-field-range/zipball/095d260eecb86ff2e78a70775011cec00a75df98",
+                "reference": "095d260eecb86ff2e78a70775011cec00a75df98",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\field\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Easily manage Yii 2 ActiveField ranges (from/to) with Bootstrap 3 addons markup and more",
+            "homepage": "https://github.com/kartik-v/yii2-field-range",
+            "keywords": [
+                "addon",
+                "bootstrap",
+                "bootstrap 3",
+                "date",
+                "extension",
+                "field-range",
+                "from",
+                "range",
+                "to",
+                "widget",
+                "yii2"
+            ],
+            "time": "2014-11-25 08:52:00"
+        },
+        {
             "name": "kartik-v/yii2-helpers",
             "version": "v1.3.1",
             "source": {
@@ -922,16 +973,16 @@
         },
         {
             "name": "kartik-v/yii2-widget-datepicker",
-            "version": "v1.3.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-datepicker.git",
-                "reference": "368b181ef658c05707fe41dd16eee4d9ffd9da38"
+                "reference": "f9ee0fda46ec4188d42b1187053c4536e03b1c5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/368b181ef658c05707fe41dd16eee4d9ffd9da38",
-                "reference": "368b181ef658c05707fe41dd16eee4d9ffd9da38",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/f9ee0fda46ec4188d42b1187053c4536e03b1c5f",
+                "reference": "f9ee0fda46ec4188d42b1187053c4536e03b1c5f",
                 "shasum": ""
             },
             "require": {
@@ -967,7 +1018,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-07-19 04:49:03"
+            "time": "2015-08-14 13:47:10"
         },
         {
             "name": "kartik-v/yii2-widget-datetimepicker",
@@ -2165,7 +2216,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "kartik-v/yii2-widget-datepicker": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
