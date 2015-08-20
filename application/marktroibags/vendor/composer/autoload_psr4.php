@@ -28,10 +28,12 @@ return array(
     'kartik\\plugins\\rating\\' => array($vendorDir . '/kartik-v/bootstrap-star-rating'),
     'kartik\\plugins\\fileinput\\' => array($vendorDir . '/kartik-v/bootstrap-fileinput'),
     'kartik\\plugins\\depdrop\\' => array($vendorDir . '/kartik-v/dependent-dropdown'),
+    'kartik\\helpers\\' => array($vendorDir . '/kartik-v/yii2-helpers'),
     'kartik\\growl\\' => array($vendorDir . '/kartik-v/yii2-widget-growl'),
     'kartik\\form\\' => array($vendorDir . '/kartik-v/yii2-widget-activeform'),
     'kartik\\file\\' => array($vendorDir . '/kartik-v/yii2-widget-fileinput'),
     'kartik\\dropdown\\' => array($vendorDir . '/kartik-v/yii2-dropdown-x'),
+    'kartik\\detail\\' => array($vendorDir . '/kartik-v/yii2-detail-view'),
     'kartik\\depdrop\\' => array($vendorDir . '/kartik-v/yii2-widget-depdrop'),
     'kartik\\datetime\\' => array($vendorDir . '/kartik-v/yii2-widget-datetimepicker'),
     'kartik\\date\\' => array($vendorDir . '/kartik-v/yii2-widget-datepicker'),
@@ -40,4 +42,5 @@ return array(
     'kartik\\alert\\' => array($vendorDir . '/kartik-v/yii2-widget-alert'),
     'kartik\\affix\\' => array($vendorDir . '/kartik-v/yii2-widget-affix'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
+    'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
 );
