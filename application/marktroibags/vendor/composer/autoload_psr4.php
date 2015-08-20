@@ -32,6 +32,7 @@ return array(
     'kartik\\growl\\' => array($vendorDir . '/kartik-v/yii2-widget-growl'),
     'kartik\\form\\' => array($vendorDir . '/kartik-v/yii2-widget-activeform'),
     'kartik\\file\\' => array($vendorDir . '/kartik-v/yii2-widget-fileinput'),
+    'kartik\\field\\' => array($vendorDir . '/kartik-v/yii2-field-range'),
     'kartik\\dropdown\\' => array($vendorDir . '/kartik-v/yii2-dropdown-x'),
     'kartik\\detail\\' => array($vendorDir . '/kartik-v/yii2-detail-view'),
     'kartik\\depdrop\\' => array($vendorDir . '/kartik-v/yii2-widget-depdrop'),
