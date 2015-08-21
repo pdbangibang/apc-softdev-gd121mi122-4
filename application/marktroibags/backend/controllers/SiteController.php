@@ -6,6 +6,8 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use common\models\AdminLoginForm;
 use yii\filters\VerbFilter;
+use backend\models\SignupForm;
+use yii\captcha\Captcha;
 
 /**
  * Site controller
@@ -15,6 +17,8 @@ class SiteController extends Controller
     /**
      * @inheritdoc
      */
+	 
+	 
     public function behaviors()
     {
         return [
@@ -22,14 +26,19 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
+                        'actions' => ['login'],
                         'allow' => true,
                     ],
-                    [
-                        'actions' => ['logout', 'index'],
+					[
+                        'actions' => ['signup'],
+                        'allow' => true,
+                    ],
+					[
+                        'actions' => ['logout'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
+                   
                 ],
             ],
             'verbs' => [
@@ -41,7 +50,8 @@ class SiteController extends Controller
         ];
     }
 
-    /**
+	
+	/**
      * @inheritdoc
      */
     public function actions()
@@ -49,6 +59,10 @@ class SiteController extends Controller
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
+            ],
+			
+			'captcha' => [
+                'class' => 'yii\captcha\CaptchaAction',
             ],
         ];
     }
@@ -74,10 +88,63 @@ class SiteController extends Controller
         }
     }
 
-    public function actionLogout()
+public function actionLogout()
     {
         Yii::$app->user->logout();
 
         return $this->goHome();
+    }
+	
+public function actionSignup()
+    {
+        $model = new SignupForm();
+        if ($model->load(Yii::$app->request->post())) {
+            if ($user = $model->signup()) {
+                if (Yii::$app->getUser()->login($user)) {
+                    return $this-> goHome();
+                }
+            }
+        }
+
+        return $this->render('signup', [
+            'model' => $model,
+        ]);
+    }
+	
+	public function actionRequestPasswordReset()
+    {
+        $model = new PasswordResetRequestForm();
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            if ($model->sendEmail()) {
+                Yii::$app->getSession()->setFlash('success', 'Check your email for further instructions.');
+
+                return $this->goHome();
+            } else {
+                Yii::$app->getSession()->setFlash('error', 'Sorry, we are unable to reset password for email provided.');
+            }
+        }
+
+        return $this->render('requestPasswordResetToken', [
+            'model' => $model,
+        ]);
+    }
+
+    public function actionResetPassword($token)
+    {
+        try {
+            $model = new ResetPasswordForm($token);
+        } catch (InvalidParamException $e) {
+            throw new BadRequestHttpException($e->getMessage());
+        }
+
+        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
+            Yii::$app->getSession()->setFlash('success', 'New password was saved.');
+
+            return $this->goHome();
+        }
+
+        return $this->render('resetPassword', [
+            'model' => $model,
+        ]);
     }
 }

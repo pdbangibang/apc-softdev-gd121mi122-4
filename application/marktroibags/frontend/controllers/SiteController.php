@@ -2,6 +2,7 @@
 namespace frontend\controllers;
 
 use Yii;
+use app\models\Kartik;
 use common\models\LoginForm;
 use common\models\UserDet;
 use common\models\UserDetSearch;
@@ -18,6 +19,7 @@ use yii\filters\AccessControl;
 /**
  * Site controller
  */
+ 
 class SiteController extends Controller
 {
     /**
@@ -170,5 +172,7 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+	
+	
 
 }

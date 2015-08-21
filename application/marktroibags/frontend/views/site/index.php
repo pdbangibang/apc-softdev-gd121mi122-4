@@ -1,6 +1,14 @@
 <?php
 /* @var $this yii\web\View */
 $this->title = 'Marktroi Bags';
+
+use yii\helpers\Html;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
+use yii\widgets\Breadcrumbs;
+use frontend\assets\AppAsset;
+use frontend\widgets\Alert;
+use kartik\dropdown\DropdownX;
 ?>
 
 <html class="no-js">
@@ -40,12 +48,10 @@ $this->title = 'Marktroi Bags';
                 <h1 class="bigheadline">Marktroi Bags</h1>
                <!-- <h4 class="subheadline">The Worst Front End Developer</h4> -->
             </div>
-            <div class="bottom">
-                <a data-scroll href="#navigation" class="scrollDown animated pulse" id="scrollToContent"><i class="pe-7s-angle-down-circle pe-va"></i></a>
-            </div>
+            
         </header>
 
-        <!-- Navigation area -->
+        <!-- Navigation area -
         <section id="navigation">
             <div class="container">
                 <div class="row">
@@ -56,23 +62,7 @@ $this->title = 'Marktroi Bags';
                         <div class="nav">
                             <a href="#" data-placement="bottom" title="Menu" class="menu" data-toggle="dropdown"><i class="pe-7s-menu"></i></a>
                              <div class="dropdown-menu">
-                                 <div class="arrow-up"></div>
-                                 <ul>
-									
-                                     <li><a data-scroll href="<?php 
-									if (Yii::$app->user->isGuest) {
-										$menuItems = 
-										[
-										['label' => 'Home', 'url' => Yii::$app->homeUrl],
-										];
-									 }
-									 ?>">Home <i class="pe-7s-home"></i></a><span class="menu-effect"></span></li>
-									 
-                                     <li><a data-scroll href="product/index">Products <i class="pe-7s-config"></i></a><span class="menu-effect"></span></li>
-                                     <li><a data-scroll href="site/about">About <i class="pe-7s-glasses"></i></a><span class="menu-effect"></span></li>
-                                     <li><a data-scroll href="site/contact">Contact <i class="pe-7s-comment"></i><span class="menu-effect"></span></a></li>
-                                     <li><a data-scroll href="site/signup">Sign Up <i class="pe-7s-help1"></i></a><span class="menu-effect"></span></li>
-                                 </ul>
+                                 
                              </div>
                         </div>
                     </div>
@@ -83,7 +73,7 @@ $this->title = 'Marktroi Bags';
         
         <!-- Content Area -->
 
-       <!-- Portfolio Area -->
+       <!-- Portfolio Area 
 
         <section id="portfolio" class="portfolio-area">
             <div class="container">
@@ -147,7 +137,7 @@ $this->title = 'Marktroi Bags';
                         <div class="btn-center"><a href="product/index" class="big button">View all</a></div>
                     </div>
                 </div>
-            </div><!-- container -->
+            </div><!-- container 
         </section><!-- portfolio -->
 
         <!-- Testimonial Area
@@ -189,7 +179,7 @@ $this->title = 'Marktroi Bags';
 
         
 
-        <!-- Footer Area -->
+        <!-- Footer Area 
 
         <footer>
             <div class="container">
@@ -200,6 +190,7 @@ $this->title = 'Marktroi Bags';
                 </div>
             </div>
         </footer>
+		<!-- Footer Area -->
 
         <!-- Necessery scripts -->
         <script src="assets/js/jquery-2.1.3.min.js"></script>

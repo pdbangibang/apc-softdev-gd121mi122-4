@@ -1,10 +1,11 @@
 <?php
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+;
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \frontend\models\SignupForm */
+/* @var $model \backend\models\SignupForm */
 
 $this->title = 'Signup';
 $this->params['breadcrumbs'][] = $this->title;
@@ -26,6 +27,8 @@ $this->params['breadcrumbs'][] = $this->title;
 				<?= $form->field($model, 'company_name') ?>
 				<?= $form->field($model, 'company_description') ?>
 				<?= $form->field($model, 'shipping_address') ?>
+				
+				
                 <div class="form-group">
                     <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
                 </div>
