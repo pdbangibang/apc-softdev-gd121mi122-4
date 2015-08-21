@@ -12,6 +12,35 @@ body {
     margin-right: 21%;
  }
  
+<<<<<<< HEAD
+=======
+ .DocumentList
+{
+    overflow-x:scroll;
+    overflow-y:hidden;
+    height:200px;
+    width:100%;
+    padding: 0 15px;
+}
+
+.DocumentItem
+{
+    border:1px solid black;
+    padding:0;
+    height:200px;
+}
+
+.list-inline {
+  white-space:nowrap;
+}
+
+.my-modal {
+	background-color:#E66F69;    
+}
+
+
+
+>>>>>>> 94f77c56f31c7d9d7300c300d2dded70fa4ac5c4
  
  
  /*------------------------------------------------------------------------*/

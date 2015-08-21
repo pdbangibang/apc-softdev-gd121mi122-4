@@ -13,6 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <html class="no-js">
 <head>
+
 	<title>Marktroi Bags</title>
 		<!-- meta -->
         <meta charset="utf-8">
@@ -28,76 +29,85 @@ $this->params['breadcrumbs'][] = $this->title;
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
         <!-- google fonts -->
         <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500|Lato:300,400,700,900,300italic,400italic,700italic,900italic|Raleway:400,200,300,500,100|Titillium+Web:400,200,300italic,300,200italic' rel='stylesheet' type='text/css'>
 
         <script src="assets/js/modernizr.js"></script>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="wrap">
-	<section id="portfolio" class="portfolio-area">
+		<section id="portfolio" class="portfolio-area">
             <div class="container">
-                <h2 class="block_title">Our Products</h2>
+                <h2 class="block_title">Products</h2>
                 <div class="row port cs-style-3">
                     <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                         <figure>
-                            <center><img src="uploads/p1.jpg" alt="img04"></center>
+                            <img src="view/uploads/Helly Hansen Dublin Backpack.jpg" alt="img04">
                             <figcaption>
-                                <h3>Backpack</h3>
+                                <h3>Helly Hansen Dublin Backpack</h3>
+								</br>
+								</br>
                                 <a href="view/6" class="button" >Take a look</a>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                         <figure>
-                            <img src="uploads/p2.jpg" alt="img01">
+                            <img src="view/uploads/Herschel Retreat Backpack - Navy.jpg" alt="img01">
                             <figcaption>
-                                <h3>Backpack</h3>
-                                <a href="view/7" class="button" >Take a look</a>
+                                <h3>Herschel Retreat Backpack - Navy</h3>
+                                <a href="#" class="button" >Take a look</a>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                         <figure>
-                            <img src="uploads/p3.jpg" alt="img02">
+                            <img src="view/uploads/Mi-Pac Classic Backpack - Navy.jpg" alt="img02">
                             <figcaption>
-                                <h3>Duffel Bag</h3>
-                                <a href="view/8" class="button" >Take a look</a>
+                                <h3>Mi-Pac Classic Backpack - Navy</h3>
+                                <a href="" class="button" >Take a look</a>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                         <figure>
-                            <img src="uploads/p4.jpg" alt="img04">
+                            <img src="view/uploads/Mi-Pac Native Backpack.jpg" alt="img04">
                             <figcaption>
-                                <h3>Shoulder Bag</h3>
-                                <a href="view/9" class="button" >Take a look</a>
+                                <h3>Mi-Pac Native Backpack</h3>
+                                <a href="#" class="button" >Take a look</a>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                         <figure>
-                            <img src="uploads/p5.jpg" alt="img01">
+                            <img src="view/uploads/Osprey Farpoint 40 Backpack.jpg" alt="img01">
                             <figcaption>
-                                <h3>Purse</h3>
-                                <a href="view/10" class="button" >Take a look</a>
+                                <h3>Osprey Farpoint 40 Backpack</h3>
+                                <a href="#" class="button" >Take a look</a>
                             </figcaption> 
                         </figure>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                         <figure>
-                            <img src="uploads/p6.jpg" alt="img02">
+                            <img src="view/uploads/Vans Deana li Backpack.jpg" alt="img02">
                             <figcaption>
-                                <h3>Laptop</h3>
-                                <a href="view/11" class="button" >Take a look</a>
+                                <h3>Vans Deana li Backpack</h3>
+                                <a href="#" class="button" >Take a look</a>
                             </figcaption>
                         </figure>
                     </div>
+                    
                 </div>
             </div><!-- container -->
-        </section>
+        </section><!-- portfolio -->
+		<!--
 	 <footer>
             <div class="container">
                 <div class="row">
@@ -106,7 +116,16 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
+		
+			<script type="text/javascript">
+				var buttons = $("#buttons").find("a");
+				$("buttons").click(function() {
+					   var id = $(this).attribute("id");
+					   $("pages id").css("display", "none");
+					   $("pages id:eq("+id+")").css("display", "block");
+				});
+			</script>
 
         <!-- Necessery scripts -->
         <script src="assets/js/jquery-2.1.3.min.js"></script>
