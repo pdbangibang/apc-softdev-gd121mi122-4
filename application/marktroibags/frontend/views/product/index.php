@@ -63,7 +63,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <img src="view/uploads/Herschel Retreat Backpack - Navy.jpg" alt="img01">
                             <figcaption>
                                 <h3>Herschel Retreat Backpack - Navy</h3>
-                                <a href="#" class="button" >Take a look</a>
+                                <a href="view/7" class="button" >Take a look</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -72,7 +72,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <img src="view/uploads/Mi-Pac Classic Backpack - Navy.jpg" alt="img02">
                             <figcaption>
                                 <h3>Mi-Pac Classic Backpack - Navy</h3>
-                                <a href="" class="button" >Take a look</a>
+                                <a href="view/8" class="button" >Take a look</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -81,7 +81,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <img src="view/uploads/Mi-Pac Native Backpack.jpg" alt="img04">
                             <figcaption>
                                 <h3>Mi-Pac Native Backpack</h3>
-                                <a href="#" class="button" >Take a look</a>
+                                <a href="view/9" class="button" >Take a look</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -90,7 +90,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <img src="view/uploads/Osprey Farpoint 40 Backpack.jpg" alt="img01">
                             <figcaption>
                                 <h3>Osprey Farpoint 40 Backpack</h3>
-                                <a href="#" class="button" >Take a look</a>
+                                <a href="view/10" class="button" >Take a look</a>
                             </figcaption> 
                         </figure>
                     </div>
@@ -99,7 +99,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <img src="view/uploads/Vans Deana li Backpack.jpg" alt="img02">
                             <figcaption>
                                 <h3>Vans Deana li Backpack</h3>
-                                <a href="#" class="button" >Take a look</a>
+                                <a href="view/11" class="button" >Take a look</a>
                             </figcaption>
                         </figure>
                     </div>
