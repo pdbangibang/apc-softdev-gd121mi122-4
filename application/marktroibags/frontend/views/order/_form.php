@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use kartik\widgets\ActiveForm;
 use backend\models\Product;
 use yii\helpers\ArrayHelper;
-use kartik\date\DatePicker;
+use kartik\widgets\DatePicker;
 
 
 /* @var $this yii\web\View */
@@ -33,20 +33,10 @@ use kartik\date\DatePicker;
 
     <?= $form->field($model, 'qty')->textInput(['maxlength' => 45]) ?>
 
-    <?php 
-		echo 'Birth Date';
-		echo DatePicker::widget([
-		'name' => 'dp_1',
-		'type' => DatePicker::TYPE_INPUT,
-		'value' => '23-Feb-1982',
-		'pluginOptions' => [
-			'autoclose'=>true,
-			'format' => 'dd-M-yyyy'
-			]
-		]);
-	?>
-
-    <?= $form->field($model, 'Status')->textInput(array('readonly' => true, 'value' => 'Pending')) ?>
+    <?= $form->field($model, 'date')->textInput(['maxlength' => 45]) ?>
+	
+	 <?= $form->field($model, 'Status')->textInput(array('readonly' => true, 'value' => 'Pending')) ?>
+   
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
