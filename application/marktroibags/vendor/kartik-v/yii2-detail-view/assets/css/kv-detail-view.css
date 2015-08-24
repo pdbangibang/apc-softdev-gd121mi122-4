@@ -2,7 +2,7 @@
  * @package   yii2-detail-view
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
- * @version   1.7.1
+ * @version   1.7.2
  *
  * Styles for yii2-detail-view extension 
  * 
@@ -47,4 +47,32 @@
 
 .kv-edit-mode table {
     overflow:hidden;
+}
+
+.kv-child-table {
+    width: 100%;
+}
+
+.kv-child-table-row, .kv-child-table-row > td {
+    vertical-align: middle;
+    padding: 0!important;
+    margin: 0!important;
+}
+
+.kv-child-table-cell {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.kv-child-table td, .kv-child-table th {
+    margin: 0;
+    padding: 8px;
+    background: transparent;   
+}
+
+.kv-child-table-row th {
+    border-left: 1px #ddd solid;
+    border-right: 1px #ddd solid;
 }

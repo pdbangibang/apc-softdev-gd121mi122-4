@@ -28,6 +28,7 @@ return array(
     'kartik\\plugins\\rating\\' => array($vendorDir . '/kartik-v/bootstrap-star-rating'),
     'kartik\\plugins\\fileinput\\' => array($vendorDir . '/kartik-v/bootstrap-fileinput'),
     'kartik\\plugins\\depdrop\\' => array($vendorDir . '/kartik-v/dependent-dropdown'),
+    'kartik\\nav\\' => array($vendorDir . '/kartik-v/yii2-nav-x'),
     'kartik\\helpers\\' => array($vendorDir . '/kartik-v/yii2-helpers'),
     'kartik\\growl\\' => array($vendorDir . '/kartik-v/yii2-widget-growl'),
     'kartik\\form\\' => array($vendorDir . '/kartik-v/yii2-widget-activeform'),
