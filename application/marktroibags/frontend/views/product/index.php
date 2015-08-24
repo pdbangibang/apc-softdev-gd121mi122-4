@@ -108,6 +108,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <figcaption>
                                 <h3>Vans Deana li Backpack</h3>
                                 <a href="view/11" class="button" >Take a look</a>
+<<<<<<< HEAD
                             </figcaption>
                         </figure>
                     </div>
@@ -309,6 +310,8 @@ $this->params['breadcrumbs'][] = $this->title;
                             <figcaption>
                                 <h3>Oakley Halifax Pack Laptop Backpack</h3>
                                 <a href="view/31" class="button" >Take a look</a>
+=======
+>>>>>>> a4eb27d749a25e639f538618ebf4513259d16f31
                             </figcaption>
                         </figure>
                     </div>

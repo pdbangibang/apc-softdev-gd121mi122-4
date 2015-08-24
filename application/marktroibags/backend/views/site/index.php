@@ -77,7 +77,7 @@ use backend\controllers\SiteController
                             <img src="images/img.jpg" alt="..." class="img-circle profile_img">
                         </div>
                         <div class="profile_info">
-                            <span>Welcome,</span>
+                            <span>admin</span>
                             
                         </div>
                     </div>
@@ -99,13 +99,13 @@ use backend\controllers\SiteController
                                 <li><a data-scroll href="product/index.php"><i class="fa fa-edit"></i> Products</a>
    
                                 </li>
-                                <li><a><i class="fa fa-desktop"></i>Report</a>
+                                <li><a data-scroll href="report/index.php"><i class="fa fa-desktop"></i>Report</a>
                                     
                                 </li>
-                                <li><a><i class="fa fa-table"></i> Orders List</a>
+                                <li><a data-scroll href="order/index.php"><i class="fa fa-table"></i> Orders List</a>
                                     
                                 </li>
-                                <li><a><i class="fa fa-bar-chart-o"></i> Manage Users</a>
+                                <li><a data-scroll href="user/index.php"><i class="fa fa-bar-chart-o"></i> Manage Users</a>
                                     
                                 </li>
                             </ul>
@@ -146,7 +146,7 @@ use backend\controllers\SiteController
                         <ul class="nav navbar-nav navbar-right">
                             <li class="">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    <img src="images/img.jpg" alt="">John Doe
+                                    Admin
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">

@@ -11,6 +11,7 @@ body {
 	background-color: #000000;
  }
  
+<<<<<<< HEAD
  .navbar-fixed-top + .content-container {
 	margin-top: 70px;
 }
@@ -87,6 +88,10 @@ width:100%;
 }
 
  
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> a4eb27d749a25e639f538618ebf4513259d16f31
  .DocumentList
 {
     overflow-x:scroll;
@@ -113,6 +118,7 @@ width:100%;
 
 
 
+>>>>>>> 94f77c56f31c7d9d7300c300d2dded70fa4ac5c4
  
  
  /*------------------------------------------------------------------------*/
