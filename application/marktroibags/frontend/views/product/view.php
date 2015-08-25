@@ -25,11 +25,13 @@ $this->params['breadcrumbs'][] = $this->title;
                        <center>
 							<h2><?= $ImageName = $model->name; ?></h2>
 							</br>
-							<h4><?= $pname = $model->description;?></h4>
+							<h4><?= $pname = $model->description; ?></h4>
 							</br>
-							<img src="/uploads/<?php echo $ImageName; ?>.jpg">
+							<img src="uploads/<?php echo $ImageName; ?>.jpg">
 							</br>
-							<a href="/marktroibags/frontend/web/" class="button">Order</a>
+							</br>
+							</br>
+							<a href="/marktroibags/frontend/web/" class="button butcos">Order</a>
 							
 						</center>
 						

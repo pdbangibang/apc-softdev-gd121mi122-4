@@ -40,9 +40,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div id="contact-area">
                 <div class="container">
                     <h2 class="block_title">Login</h2>
-                    <div class="row">
-                        <div class="col-xs-12">
-                        </div>
+                    
                        <center>
                             
 							<h3>Please fill out the following fields to login:</h3>
@@ -61,7 +59,7 @@ $this->params['breadcrumbs'][] = $this->title;
 								</div>
 							<?php ActiveForm::end(); ?>
 						</center>
-                    </div>
+                    
                 </div><!-- container -->
             </div><!-- contact-area -->
         </section>

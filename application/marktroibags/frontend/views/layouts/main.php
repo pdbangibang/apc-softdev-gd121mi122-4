@@ -42,9 +42,13 @@ AppAsset::register($this);
                     [
                     ['label' => 'Home', 'url' => Yii::$app->homeUrl],
                     ['label' => 'Products', 'active' =>true, 'items' => [
-						['label' => 'Action', 'url' => '#'],
-						['label' => 'Another action', 'url' => '#'],
-						['label' => 'Something else here', 'url' => '#'],
+						['label' => 'Backpacks', 'url' => ['/product/index#backpacks']],
+						['label' => 'Clutch', 'url' => ['/product/index#clutch']],
+						['label' => 'Duffel', 'url' => ['/product/index#duffel']],
+						['label' => 'Laptop', 'url' => ['/product/index#laptop']],
+						['label' => 'Purse', 'url' => ['/product/index#purse']],
+						['label' => 'Shoulder Bag', 'url' => ['/product/index#shoulderbag']],
+						['label' => 'Sports Travel', 'url' => ['/product/index#sportstravel']],
 					]],
                     ['label' => 'About Us', 'url' => ['/site/about']],
                     ['label' => 'Contact Us', 'url' => ['/site/contact']],
@@ -62,7 +66,15 @@ AppAsset::register($this);
                     $menuItems = 
                     [
                     ['label' => 'Home', 'url' => Yii::$app->homeUrl],
-                    ['label' => 'Products', 'url' => ['/product/index']],
+                    ['label' => 'Products', 'active' =>true, 'items' => [
+						['label' => 'Backpacks', 'url' => ['/product/index#backpacks']],
+						['label' => 'Clutch', 'url' => ['/product/index#clutch']],
+						['label' => 'Duffel', 'url' => ['/product/index#duffel']],
+						['label' => 'Laptop', 'url' => ['/product/index#laptop']],
+						['label' => 'Purse', 'url' => ['/product/index#purse']],
+						['label' => 'Shoulder Bag', 'url' => ['/product/index#shoulderbag']],
+						['label' => 'Sports Travel', 'url' => ['/product/index#sportstravel']],
+					]],
                     ['label' => 'My Orders', 'url' => ['/order/index']],
                     ['label' => 'About Us', 'url' => ['/site/about']],
                     ['label' => 'Contact Us', 'url' => ['/site/contact']],
