@@ -15,6 +15,8 @@ $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+
 <div class="product-view">
     	<section id="contact" class="mapWrap">
             <div id="googleMap" style="width:100%;"></div>
@@ -31,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
 							<a href="/marktroibags/frontend/web/" class="button">Order</a>
 							</br>
 						</center>
-                  
+						
                 </div><!-- container -->
             </div><!-- contact-area -->
         </section>

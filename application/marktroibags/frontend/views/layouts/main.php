@@ -5,6 +5,8 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use frontend\widgets\Alert;
+use kartik\nav\NavX;
+
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -23,12 +25,14 @@ AppAsset::register($this);
 </head>
 <body>
     <?php $this->beginBody() ?>
+	<center>
+	
                                  <?php
             NavBar::begin([
                 
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
-                    'class' => 'my-navbar navbar-fixed-top',
+                    'class' => 'my-navbar navbar-fixed-top nav nav-pills',
                 ],
             ]);
 
@@ -37,7 +41,11 @@ AppAsset::register($this);
                     $menuItems = 
                     [
                     ['label' => 'Home', 'url' => Yii::$app->homeUrl],
-                    ['label' => 'Products', 'url' => ['/product/index']],
+                    ['label' => 'Products', 'active' =>true, 'items' => [
+						['label' => 'Action', 'url' => '#'],
+						['label' => 'Another action', 'url' => '#'],
+						['label' => 'Something else here', 'url' => '#'],
+					]],
                     ['label' => 'About Us', 'url' => ['/site/about']],
                     ['label' => 'Contact Us', 'url' => ['/site/contact']],
                     ['label' => 'Register', 'url' => ['/site/signup']],
@@ -63,9 +71,11 @@ AppAsset::register($this);
                 ];    
                 }
             }
-            echo Nav::widget([
-                'options' => ['class' => 'navbar-nav navbar-right'],
+            echo NavX::widget([
+                'options' => ['class' => 'navbar-nav'],
                 'items' => $menuItems,
+				'activateParents' => true,
+				'encodeLabels' => false
             ]);
             NavBar::end();
         ?>
@@ -83,7 +93,7 @@ AppAsset::register($this);
         </div>
     </footer>
 	<!-- Footer Area -->
-
+	</center>
     <?php $this->endBody() ?>
 </body>
 </html>

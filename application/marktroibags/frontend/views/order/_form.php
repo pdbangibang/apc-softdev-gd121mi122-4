@@ -1,9 +1,11 @@
 <?php
 
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use kartik\widgets\ActiveForm;
 use backend\models\Product;
 use yii\helpers\ArrayHelper;
+use kartik\widgets\DatePicker;
+
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Order */
@@ -32,8 +34,9 @@ use yii\helpers\ArrayHelper;
     <?= $form->field($model, 'qty')->textInput(['maxlength' => 45]) ?>
 
     <?= $form->field($model, 'date')->textInput(['maxlength' => 45]) ?>
-
-    <?= $form->field($model, 'Status')->textInput(array('readonly' => true, 'value' => 'Pending')) ?>
+	
+	 <?= $form->field($model, 'Status')->textInput(array('readonly' => true, 'value' => 'Pending')) ?>
+   
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

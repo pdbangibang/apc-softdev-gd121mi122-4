@@ -4,7 +4,9 @@
  * @copyright Copyright (c) 2008 Yii Software LLC
  * @license http://www.yiiframework.com/license/
  */
+
 namespace yii\helpers;
+
 /**
  * Html provides a set of static methods for generating commonly used HTML tags.
  *

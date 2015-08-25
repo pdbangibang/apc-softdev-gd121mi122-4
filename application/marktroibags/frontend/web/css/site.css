@@ -5,15 +5,93 @@ body {
  /*---------------------------PERSONALIZE CSS-----------------------------*/
  .my-navbar {
 	font-size: 18px;
-	position: absolute;
-    width: 100%;
-    left: 0;
     margin: auto;
-    margin-right: 21%;
+	text-align: center;
+	width: 125%;
+	background-color: #000000;
  }
  
 <<<<<<< HEAD
+ .navbar-fixed-top + .content-container {
+	margin-top: 70px;
+}
+.content-container {
+	margin: 0 130px;
+}
+
+
+
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px; /* negative of the offset - height of link element */
+    left: 10px; /* padding from the left side of the window */
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px; /* height of link element */
+    left: 10px; /* padding from the left side of the window */
+}
+ 
+ #backpacks {
+	padding-top: 70px;
+ }
+ #clutch {
+	padding-top: 70px;
+ }
+ #duffel {
+	padding-top: 70px;
+ }
+ #laptop {
+	padding-top: 70px;
+ }
+ #purse {
+	padding-top: 70px;
+ }
+ #shoulder {
+	padding-top: 70px;
+ }
+ #sportstravel {
+	padding-top: 70px;
+ }
+ 
+.fontpro {
+   font-family: 'Open Sans Condensed', sans-serif;
+}
+ 
+  #wrap > .container {
+    padding: 60px 15px 0;
+}
+
+@media (min-width:768px) {
+.container {
+width:100%;
+}
+#main-content{
+     min-height: 100%;
+    height: auto; 
+   
+}
+#main-content > .row {
+ overflow-x:scroll;
+     overflow-y:hidden;
+    white-space:nowrap;
+}    
+#main-content > .row [class*="col-lg"], #main-content > .row [class*="col-md"], #main-content > .row [class*="col-sm"] {
+    float:none;
+    display:inline-block;
+}
+
+.pcos {
+	text-align:center;
+	background: rgba(0, 0, 0, .3);
+	padding: 10px;
+}
+
+ 
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> a4eb27d749a25e639f538618ebf4513259d16f31
  .DocumentList
 {
     overflow-x:scroll;
