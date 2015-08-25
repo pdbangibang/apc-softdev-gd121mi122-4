@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 17, 2015 at 03:40 PM
+-- Generation Time: Aug 25, 2015 at 07:03 AM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -112,21 +112,54 @@ CREATE TABLE IF NOT EXISTS `product` (
   `name` varchar(100) NOT NULL,
   `description` varchar(200) NOT NULL,
   `logo` varchar(200) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `product`
 --
 
 INSERT INTO `product` (`id`, `name`, `description`, `logo`) VALUES
-(6, 'Backpack', 'A sturdy bag designed for carrying articles on a person''s back, having shoulder straps and often mounted on a lightweight frame.', 'uploads/Backpack.jpg'),
-(7, 'Clutch Bag', 'A small flat bag without a handle, carried by women, especially on formal occasions. Designed to hold a few necessities like a driver''s license, a cellphone, and a credit card.', 'uploads/Clutch Bag.jpg'),
-(8, 'Duffel Bag', 'A large, cylindrical bag, especially of canvas, for carrying personal belongings, originally used by military personnel.', 'uploads/Duffel Bag.jpg'),
-(9, 'Laptop', 'Backpacks, messenger bags, briefcases, and top loaders are the four main kinds of laptop bags. ', 'uploads/Laptop.jpg'),
-(10, 'Purse', 'A usually closable bag used for carrying keys, a wallet, and other personal items, especially by women; a handbag.', 'uploads/Purse.jpg'),
-(11, 'Shoulder Bag', 'A handbag carried by a strap that is looped over the shoulder.', 'uploads/Shoulder Bag.jpg'),
-(12, 'Sports/Travelling', 'A large cylindrical bag made of cloth or other fabric with a drawstring closure at the top. It is often used to carry luggage or sports equipment by people who travel in the outdoors.', ''),
-(16, 'sample bag', 'sample sample', 'uploads/sample bag.jpg');
+(6, 'Helly Hansen Dublin Backpack', 'A sturdy bag designed for carrying articles on a person''s back, having shoulder straps and often mounted on a lightweight frame.', 'uploads/Helly Hansen Dublin Backpack.jpg'),
+(7, 'Herschel Retreat Backpack - Navy', 'A small flat bag without a handle, carried by women, especially on formal occasions. Designed to hold a few necessities like a driver''s license, a cellphone, and a credit card.', 'uploads/Herschel Retreat Backpack - Navy.jpg'),
+(8, 'Mi-Pac Classic Backpack - Navy', 'A large, cylindrical bag, especially of canvas, for carrying personal belongings, originally used by military personnel.', 'uploads/Mi-Pac Classic Backpack - Navy.jpg'),
+(9, 'Mi-Pac Native Backpack', 'Backpacks, messenger bags, briefcases, and top loaders are the four main kinds of laptop bags. ', 'uploads/Mi-Pac Native Backpack.jpg'),
+(10, 'Osprey Farpoint 40 Backpack', 'A usually closable bag used for carrying keys, a wallet, and other personal items, especially by women; a handbag.', 'uploads/Osprey Farpoint 40 Backpack.jpg'),
+(11, 'Vans Deana li Backpack', 'A handbag carried by a strap that is looped over the shoulder.', 'uploads/Vans Deana li Backpack.jpg'),
+(12, 'French Connection Silva Bag', 'A large cylindrical bag made of cloth or other fabric with a drawstring closure at the top. It is often used to carry luggage or sports equipment by people who travel in the outdoors.', 'uploads/French Connection Silva Bag.jpg'),
+(16, 'Lacoste Clutch Bag', 'sample sample', 'uploads/Lacoste Clutch Bag.jpg'),
+(17, 'Maison Scotch Batik Bag', 'Maison Scotch Batik Bag', 'uploads/Maison Scotch Batik Bag.jpg'),
+(18, 'Volcom Betty Bag', 'Volcom Betty Bag', 'uploads/Volcom Betty Bag.jpg'),
+(19, 'Ted Baker Deena Bag', 'Samsoe & Samsoe Romain Clutch Pouch Bag', 'uploads/Ted Baker Deena Bag.jpg'),
+(20, 'Mi-Pac Duffel Stars Bag', 'Mi-Pac Duffel Stars Bag', 'uploads/Mi-Pac Duffel Stars Bag.jpg'),
+(21, 'Overboard 60 Litre Pro Vis Duffel Dry Bag', 'Overboard 60 Litre Pro Vis Duffel Dry Bag', 'uploads/Overboard 60 Litre Pro Vis Duffel Dry Bag.jpg'),
+(22, 'Patagonia Arbor Duffel 60l Bag', 'Patagonia Arbor Duffel 60l Bag', 'uploads/Patagonia Arbor Duffel 60l Bag.jpg'),
+(23, 'The North Face Base Camp Duffel', 'The North Face Base Camp Duffel', 'uploads/The North Face Base Camp Duffel.jpg'),
+(24, 'The North Face Base Camp Medium Duffle Bag', 'The North Face Base Camp Medium Duffle Bag', 'uploads/The North Face Base Camp Medium Duffle Bag.jpg'),
+(25, 'The North Face Masen Duffle Bag', 'The North Face Masen Duffle Bag', 'uploads/The North Face Masen Duffle Bag.jpg'),
+(26, 'Adidas Originals Superstar Classic Laptop Backpack', 'Adidas Originals Superstar Classic Laptop Backpack', 'uploads/Adidas Originals Superstar Classic Laptop Backpack.jpg'),
+(27, 'Burton Prospect Laptop Backpack', 'Burton Prospect Laptop Backpack', 'uploads/Burton Prospect Laptop Backpack.jpg'),
+(28, 'Burton Tinder Laptop Backpack', 'Burton Tinder Laptop Backpack', 'uploads/Burton Tinder Laptop Backpack.jpg'),
+(29, 'Dakine Gemini 28l Laptop Backpack', 'Dakine Gemini 28l Laptop Backpack', 'uploads/Dakine Gemini 28l Laptop Backpack.jpg'),
+(30, 'Herschel Post Backpack', 'Herschel Post Backpack', 'uploads/Herschel Post Backpack.jpg'),
+(31, 'Oakley Halifax Pack Laptop Backpack', 'Oakley Halifax Pack Laptop Backpack', 'uploads/Oakley Halifax Pack Laptop Backpack.jpg'),
+(32, 'Rip Curl Telma Wallet', 'Rip Curl Telma Wallet', 'uploads/Rip Curl Telma Wallet.jpg'),
+(33, 'Ted Baker Anicca Wallet', 'Ted Baker Anicca Wallet', 'uploads/Ted Baker Anicca Wallet.jpg'),
+(34, 'Ted Baker Ashmore Wallet', 'Ted Baker Ashmore Wallet', 'uploads/Ted Baker Ashmore Wallet.jpg'),
+(35, 'Ted Baker Darcie Wallet', 'Ted Baker Darcie Wallet', 'uploads/Ted Baker Darcie Wallet.jpg'),
+(36, 'Ted Baker Helan Wallet', 'Ted Baker Helan Wallet', 'uploads/Ted Baker Helan Wallet.jpg'),
+(37, 'Ted Baker Missti Wallet', 'Ted Baker Missti Wallet', 'uploads/Ted Baker Missti Wallet.jpg'),
+(38, 'Brakeburn Beach Bucket Beach Bag', 'Brakeburn Beach Bucket Beach Bag', 'uploads/Brakeburn Beach Bucket Beach Bag.jpg'),
+(39, 'Charcoal Rose Hunter Leather Satchel', 'Charcoal Rose Hunter Leather Satchel', 'uploads/Charcoal Rose Hunter Leather Satchel.jpg'),
+(40, 'Rip Curl Paradise Shoulder Bag', 'Rip Curl Paradise Shoulder Bag', 'uploads/Rip Curl Paradise Shoulder Bag.jpg'),
+(41, 'Rip Curl Paradise Sports Bag', 'Rip Curl Paradise Sports Bag', 'uploads/Rip Curl Paradise Sports Bag.jpg'),
+(42, 'Seafolly Tribal Across Body Shoulder Bag', 'Seafolly Tribal Across Body Shoulder Bag', 'uploads/Seafolly Tribal Across Body Shoulder Bag.jpg'),
+(43, 'Wolf & York Hanne Bag', 'Wolf & York Hanne Bag', 'uploads/Wolf & York Hanne Bag.jpg'),
+(44, 'Dakine Venture Duffle Luggage', 'Dakine Venture Duffle Luggage', 'uploads/Dakine Venture Duffle Luggage.jpg'),
+(45, 'Eastpak Tranverz L Luggage', 'Eastpak Tranverz L Luggage', 'uploads/Eastpak Tranverz L Luggage.jpg'),
+(46, 'Lowe Alpine Kit Bag 60L', 'Lowe Alpine Kit Bag 60L', 'uploads/Lowe Alpine Kit Bag 60L.jpg'),
+(47, 'Oakley Factory Pilot Duffel Gym Bag', 'Oakley Factory Pilot Duffel Gym Bag', 'uploads/Oakley Factory Pilot Duffel Gym Bag.jpg'),
+(48, 'Osprey Meridian 75 Bag', 'Osprey Meridian 75 Bag', 'uploads/Osprey Meridian 75 Bag.jpg'),
+(49, 'Under Armour Undeniable Medium Duffle Bag', 'Under Armour Undeniable Medium Duffle Bag', 'uploads/Under Armour Undeniable Medium Duffle Bag');
 
 -- --------------------------------------------------------
 
@@ -188,7 +221,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `status` smallint(6) NOT NULL DEFAULT '10',
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `user`
@@ -202,7 +235,8 @@ INSERT INTO `user` (`id`, `fname`, `lname`, `contact_no`, `username`, `company_n
 (6, 'demo', 'demo', 'demo', 'demo', 'APC', NULL, 'Humabon Magallanes', '8urHe0RqNuerCN2oPGM9jvpBCKRiVPjY', 0, '$2y$13$KoNYWb8Nx07dLsnIHPPOKePg5E2B2AQsqMUrcuOdiqcupR88g.cPW', NULL, 'demonstration2@apc.edu.ph', 10, 1427533355, 1427533355),
 (7, 'Troi', 'Bolton', '12345', 'user1', 'user1 company', NULL, 'Bangkal', 'Nc_im7-2piRLyph_cr2WG5Zt0VeqofqR', 0, '$2y$13$z7hDHk.Xq4CeYk8OITzY2.igleNeU/sL0cz3b0HqYvEhB0yamz.7u', NULL, 'user1@gmail.com', 10, 1428468788, 1428468788),
 (9, 'Princess', 'Hannah', '7296621', 'admin02', 'BDO', NULL, 'bangkal, makati city', 'yBJXz5U8qVB5YCT3BitTbo432CWjm7Pi', 0, '$2y$13$1m/GgbU0NjgQasWPAhToc.ck26VrtheNloAF7DLvJ94NtG.m5A4i6', NULL, 'hannybee13@yahoo.com', 10, 1439818629, 1439818629),
-(10, 'test', 'test', '1234567', 'test01', 'school', NULL, 'makati city', 'P6WnsHQG1nyUuk1WSLz6kKwRVoLn7_4Q', 0, '$2y$13$RzDfn9EBPiYL.7MfIlZvC.ytXq5fyJZ8VB7Q/x7jucjCphn8irrry', NULL, 'test@gmail.com', 10, 1439818731, 1439818731);
+(10, 'test', 'test', '1234567', 'test01', 'school', NULL, 'makati city', 'P6WnsHQG1nyUuk1WSLz6kKwRVoLn7_4Q', 0, '$2y$13$RzDfn9EBPiYL.7MfIlZvC.ytXq5fyJZ8VB7Q/x7jucjCphn8irrry', NULL, 'test@gmail.com', 10, 1439818731, 1439818731),
+(11, 'Camille Mae', 'Samonte', '09057140102', 'kai07', 'Kpop Merch', NULL, '170 Nina Ricci Dr., Savvy 25, Km.18, Paranaque City', 'TrO1vV2M7btAXKABmEL9KwNeH664J3ul', 0, '$2y$13$Ch7a9ZVLX.rJJv4LrhRnoOxLSSCbkGh2ocvl3J/0qPtKqZmmYstXm', NULL, 'jungeunji102@gmail.com', 10, 1440068474, 1440068474);
 
 --
 -- Indexes for dumped tables
@@ -268,7 +302,7 @@ ALTER TABLE `order`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=50;
 --
 -- AUTO_INCREMENT for table `promotion`
 --
@@ -283,7 +317,7 @@ ALTER TABLE `report`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- Constraints for dumped tables
 --
