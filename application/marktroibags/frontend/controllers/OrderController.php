@@ -1,14 +1,14 @@
 <?php
-
 namespace frontend\controllers;
-
 use Yii;
 use frontend\models\Order;
 use frontend\models\OrderSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use common\models\User;
+use yii\base\Component;
+use yii\base\Object;
 /**
  * OrderController implements the CRUD actions for Order model.
  */
@@ -25,7 +25,6 @@ class OrderController extends Controller
             ],
         ];
     }
-
     /**
      * Lists all Order models.
      * @return mixed
@@ -34,13 +33,11 @@ class OrderController extends Controller
     {
         $searchModel = new OrderSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
-
     /**
      * Displays a single Order model.
      * @param integer $id
@@ -52,7 +49,6 @@ class OrderController extends Controller
             'model' => $this->findModel($id),
         ]);
     }
-
     /**
      * Creates a new Order model.
      * If creation is successful, the browser will be redirected to the 'view' page.
@@ -61,7 +57,8 @@ class OrderController extends Controller
     public function actionCreate()
     {
         $model = new Order();
-
+    
+        $model->user_id =Yii::$app->user->identity->id;
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -70,7 +67,6 @@ class OrderController extends Controller
             ]);
         }
     }
-
     /**
      * Updates an existing Order model.
      * If update is successful, the browser will be redirected to the 'view' page.
@@ -80,7 +76,6 @@ class OrderController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -89,7 +84,6 @@ class OrderController extends Controller
             ]);
         }
     }
-
     /**
      * Deletes an existing Order model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
@@ -99,10 +93,8 @@ class OrderController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-
         return $this->redirect(['index']);
     }
-
     /**
      * Finds the Order model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.

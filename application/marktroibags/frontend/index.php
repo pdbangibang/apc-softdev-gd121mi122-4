@@ -1,9 +1,12 @@
 <?php
+
 use yii\helpers\Html;
 use yii\grid\GridView;
+
 /* @var $this yii\web\View */
-/* @var $searchModel frontend\models\OrderSearch */
+/* @var $searchModel backend\models\OrderSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
+
 $this->title = 'Orders';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -21,15 +24,14 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-            //'user_id',
-            'username',
-            //'product_id',
-            ['label' => 'Product Name', 'attribute' => 'product_id', 'value' => 'product.name'],
-            //'qty',
-            ['label' => 'Quantity', 'attribute' => 'qty'],
-            ['label' => 'Order ID', 'attribute' => 'id'],
+
+            'user_id',
+            'product_id',
+            'promotion_id',
+            'id',
             'date',
-            'Status',
+            // 'status',
+
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

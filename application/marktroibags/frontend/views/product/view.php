@@ -39,23 +39,6 @@ $this->params['breadcrumbs'][] = $this->title;
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
-        <style>
-		a.butview:link,a.butview:visited
-{
-display:block;
-font-weight:bold;
-color:white;
-background-color:black;
-width:220px;
-text-align:center;
-padding:4px;
-text-decoration:none;
-}
-a.butview:hover,a.butview:active
-{
-background-color:gray;
-}
-</style>s
         <!-- google fonts -->
         <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500|Lato:300,400,700,900,300italic,400italic,700italic,900italic|Raleway:400,200,300,500,100|Titillium+Web:400,200,300italic,300,200italic' rel='stylesheet' type='text/css'>
 
@@ -75,23 +58,34 @@ background-color:gray;
 							<h4><?= $pname = $model->description; ?></h4>
 							</br>
 							<img src="uploads/<?php echo $ImageName; ?>.jpg">
-<<<<<<< HEAD
+
 							</br>
 							</br>
+							<div class="input-group spinner">
+								<input type="text" class="form-control" value="0">
+								<div class="input-group-btn-vertical">
+								  <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+								  <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+								</div>
+							  </div>
 							</br>
 							<a href="/marktroibags/frontend/web/" class="button butcos">Order</a>
-=======
-							<br>
->>>>>>> ba13b96f9c5d7845418458f0e2271a5c38bc1ab8
-							
-							<a href="/marktroibags/frontend/web/" class="butview" fon>Order</a>
-							</br>
 						</center>
 						
                 </div><!-- container -->
             </div><!-- contact-area -->
         </section>
 			 
+		<script>
+		(function ($) {
+		  $('.spinner .btn:first-of-type').on('click', function() {
+			$('.spinner input').val( parseInt($('.spinner input').val(), 10) + 1);
+		  });
+		  $('.spinner .btn:last-of-type').on('click', function() {
+			$('.spinner input').val( parseInt($('.spinner input').val(), 10) - 1);
+		  });
+		})(jQuery);
+		</script>
 
         <!-- Necessery scripts -->
         <script src="assets/js/jquery-2.1.3.min.js"></script>
