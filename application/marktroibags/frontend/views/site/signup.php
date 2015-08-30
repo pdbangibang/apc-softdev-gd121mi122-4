@@ -41,9 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div id="contact-area">
                 <div class="container">
                     <h2 class="block_title">Registration</h2>
-                    <div class="row">
-                        <div class="col-xs-12">
-                        </div>
+                   
                        <center>
                             
 							<h3>Please fill out the following fields to register an account:</h3>
@@ -65,20 +63,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
             <?php ActiveForm::end(); ?>
 						
-                    </div>
+                    
                 </div><!-- container -->
             </div><!-- contact-area -->
            
         </section>
-			 <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p class="copyright">© Copyright 2015 <a href="http://wwww.technextit.com" target="_blank">Marktroi Bags</a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
 
         <!-- Necessery scripts -->
         <script src="assets/js/jquery-2.1.3.min.js"></script>

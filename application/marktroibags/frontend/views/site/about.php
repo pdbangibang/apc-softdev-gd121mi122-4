@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+use frontend\assets\AppAsset;
 
 /* @var $this yii\web\View */
 $this->title = 'About';
@@ -34,22 +35,15 @@ $this->params['breadcrumbs'][] = $this->title;
 	<section id="portfolio" class="portfolio-area">
             <div class="container">
                 <h2 class="block_title">About Us</h2>
-                <p>TMark Troi Bags is a duly recognized business entity by the Department of Trade and Industry and Department of Labor and Employment established in 2001 under the name MINT Bags and Promotional Enterprises, through the leadership and management of Ms. Luzviminda Mendoza 
+                <div class="box">
+				<p>Mark Troi Bags is a duly recognized business entity by the Department of Trade and Industry and Department of Labor and Employment established in 2001 under the name MINT Bags and Promotional Enterprises, through the leadership and management of Ms. Luzviminda Mendoza 
 
-				Her expertise has gained the trust and respect of clients such as: Unilever, Mars Food Inc.-Singapore, Veterans Bank, BPI, Chinabank, Maybank, Phil. Red Cross, Asian Life Insurance, Sara Lee, Rustans Phil. and more 
+				Her expertise has gained the trust and respect of clients such as: Unilever, Mars Food Inc.-Singapore, Veterans Bank, BPI, Chinabank, Maybank, Phil. Red Cross, Asian Life Insurance, Sara Lee, Rustans Phil. and more. 
 	
-				By 2008, The company changed the company name to Mark Troi Bags</p>
+				The company changed the company name to Mark Troi Bags by 2008.</p>
             </div><!-- container -->
+			</div>
         </section>
-	 <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p class="copyright">© Copyright 2015 <a href="http://wwww.technextit.com" target="_blank">Marktroi Bags</a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
 
         <!-- Necessery scripts -->
         <script src="assets/js/jquery-2.1.3.min.js"></script>

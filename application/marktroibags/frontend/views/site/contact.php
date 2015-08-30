@@ -7,7 +7,7 @@ use yii\captcha\Captcha;
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \frontend\models\ContactForm */
 
-$this->title = 'Contact';
+$this->title = 'Marktroi Bags - Contact';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <html class="no-js">
@@ -85,16 +85,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
             </div><!-- social -->
         </section>
-			 <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p class="copyright">© Copyright 2015 <a href="http://wwww.technextit.com" target="_blank">Marktroi Bags</a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
         <!-- Necessery scripts -->
         <script src="assets/js/jquery-2.1.3.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>

@@ -6,7 +6,7 @@ use yii\bootstrap\ActiveForm;
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \common\models\LoginForm */
 
-$this->title = 'Login';
+$this->title = 'Makrtroi Bags - Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <html class="no-js">
@@ -46,13 +46,14 @@ $this->params['breadcrumbs'][] = $this->title;
 							<h3>Please fill out the following fields to login:</h3>
 							</br>
                             <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+								
 								<?= $form->field($model, 'username') ?>
 								<?= $form->field($model, 'password')->passwordInput() ?>
 								<?= $form->field($model, 'rememberMe')->checkbox() ?>
 								
-								<div style="color:#999;margin:1em 0">
+								<p>
 								If you forgot your password you can <?= Html::a('reset it', ['site/request-password-reset']) ?>.
-								</div>
+								<p>
 								
 								<div class="form-group">
 									<?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
@@ -63,15 +64,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div><!-- container -->
             </div><!-- contact-area -->
         </section>
-			 <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p class="copyright">© Copyright 2015 <a href="http://wwww.technextit.com" target="_blank">Marktroi Bags</a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+			
 
         <!-- Necessery scripts -->
         <script src="assets/js/jquery-2.1.3.min.js"></script>
