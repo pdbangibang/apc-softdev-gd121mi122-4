@@ -33,22 +33,24 @@ Text Domain: darkjoe
 
 html, body {
     height:100%;
+	background: url(../images/bg.jpg);
 }
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: Raleway;
+	
 }
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'Dosis', sans-serif;
+	font-family: Raleway;
 }
 a {
-	color: #e66f69;
+	color: #000000;
 	transition: 0.4s ease all;
 	outline: none;
 }
 a:hover,a:active,a:focus{
 	text-decoration: none;
-	color: #e66f69;
+	color: #5DBCD2;
 	opacity: 0.9;
 	outline: none;
 }
@@ -95,7 +97,7 @@ a:hover,a:active,a:focus{
 /////////////////////////////////////////////////////////////////////*/
 
 header{
-	background: url(../images/bg.jpg) no-repeat;
+	background: url(../images/bg.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: 50% -50px;
@@ -389,7 +391,7 @@ header{
 /////////////////////////////////////////////////////////////////////*/
 
 #testimonial {
-    background: url(../images/parallax.jpg);
+    background: url(../images/bg.jpg);
     padding: 80px 0px 80px 0px;
     color: #fff;
     background-attachment: fixed;
@@ -418,7 +420,7 @@ header{
 }
 
 #register {
-    background: url(../images/parallax.jpg);
+    background: url(../images/bg.jpg);
     
     color: #fff;
     background-attachment: fixed;
@@ -430,7 +432,7 @@ header{
 
 
 #contact {
-    background: url(../images/map.jpg);
+   background: url(../images/bg.jpg);
     
     color: #fff;
     background-attachment: fixed;
@@ -449,7 +451,7 @@ header{
     height: 100%;
 }
 #contact-area {
-    background: rgba(0, 0, 0, 0.7);
+    
     width: 100%;
     position: relative;
     padding: 80px 0px 60px 0px;
@@ -502,7 +504,7 @@ header{
 /*Social media links*/
 
 #social {
-    background-color: rgba(0, 0, 0, 0.75) !important;
+   
     padding: 30px 0px 30px 0px;
     position: relative;
 }
@@ -637,7 +639,7 @@ footer {
 @media all and (max-width: 991px) {
 
 	header{
-		background: url(../images/bg-small.jpg) no-repeat !important;
+		background: url(../images/bg.jpg);
 	}
 }
 

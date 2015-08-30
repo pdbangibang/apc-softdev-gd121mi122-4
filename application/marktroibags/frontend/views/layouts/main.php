@@ -20,6 +20,7 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
+	
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
@@ -27,12 +28,12 @@ AppAsset::register($this);
     <?php $this->beginBody() ?>
 	<center>
 	
-                                 <?php
+        <?php
             NavBar::begin([
-                
+                'brandLabel' => Html::img('product/view/uploads/Untitled2.png'),
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
-                    'class' => 'my-navbar navbar-fixed-top nav nav-pills',
+                    'class' => 'my-navbar navbar-fixed-top',
                 ],
             ]);
 
@@ -41,7 +42,7 @@ AppAsset::register($this);
                     $menuItems = 
                     [
                     ['label' => 'Home', 'url' => Yii::$app->homeUrl],
-                    ['label' => 'Products', 'active' =>true, 'items' => [
+                    ['label' => 'Products', 'items' => [
 						['label' => 'Backpacks', 'url' => ['/product/index#backpacks']],
 						['label' => 'Clutch', 'url' => ['/product/index#clutch']],
 						['label' => 'Duffel', 'url' => ['/product/index#duffel']],
@@ -66,7 +67,7 @@ AppAsset::register($this);
                     $menuItems = 
                     [
                     ['label' => 'Home', 'url' => Yii::$app->homeUrl],
-                    ['label' => 'Products', 'active' =>true, 'items' => [
+                    ['label' => 'Products', 'items' => [
 						['label' => 'Backpacks', 'url' => ['/product/index#backpacks']],
 						['label' => 'Clutch', 'url' => ['/product/index#clutch']],
 						['label' => 'Duffel', 'url' => ['/product/index#duffel']],
@@ -83,28 +84,16 @@ AppAsset::register($this);
                 ];    
                 }
             }
-            echo NavX::widget([
-                'options' => ['class' => 'navbar-nav'],
+            echo Nav::widget([
+                'options' => ['class' => 'my-navbar navbar-nav navbar-right'],
                 'items' => $menuItems,
-				'activateParents' => true,
-				'encodeLabels' => false
             ]);
             NavBar::end();
         ?>
 
-                 
+        <div>         
         <?= $content ?>
-
-
-
-<!-- Footer Area 
-    <footer class="footer">
-        <div class="container">
-        <p class="pull-left">&copy; Marktroi Bags Online <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
-        </div>
-    </footer>
-	<!-- Footer Area -->
+		</div>
 	</center>
     <?php $this->endBody() ?>
 </body>

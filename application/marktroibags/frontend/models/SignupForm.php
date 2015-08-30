@@ -77,4 +77,21 @@ class SignupForm extends Model
 
         return null;
     }
+	
+	public function attributeLabels()
+    {
+        return [
+            'fname' => 'First Name',
+            'lname' => 'Last Name',
+            'contact_no' => 'Contact No.',
+            'username' => 'Username',
+			'email' => 'Email Address',
+			'password' => 'Password',
+			'company_name' => 'Company Name',
+			'company_description' => 'Company Description',
+			'company_address' => 'Company Address',
+			'shipping_address' => 'Shipping_Address',
+			'captcha' => 'Captcha',
+        ];
+    }
 }

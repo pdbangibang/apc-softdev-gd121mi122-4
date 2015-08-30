@@ -46,19 +46,28 @@ $this->params['breadcrumbs'][] = $this->title;
 		
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>   
+<body>
 
 <div class="product-view">
     	<section id="contact" class="mapWrap">
             <div id="googleMap" style="width:100%;"></div>
             <div id="contact-area">
-                <div class="container">
-                       <center>
-							<h2><?= $ImageName = $model->name; ?></h2>
+			<div class="container-fluid">
+			  <div class="row">
+				
+				  <div class="row">
+					<div class="col-md-6">
+						</br>
+						</br>
+						</br>
+							</br>
+							</br>
+							</br>
+							</br>
+							</br>
+						<h2><?= $ImageName = $model->name; ?></h2>
 							</br>
 							<h4><?= $pname = $model->description; ?></h4>
-							</br>
-							<img src="uploads/<?php echo $ImageName; ?>.jpg">
-
 							</br>
 							</br>
 							<div class="input-group spinner">
@@ -69,10 +78,20 @@ $this->params['breadcrumbs'][] = $this->title;
 								</div>
 							  </div>
 							</br>
-							<a href="/marktroibags/frontend/web/" class="button butcos">Order</a>
-						</center>
+							</br>
+							
+							<?= Html::a('Order', ['order/create'], ['class' => 'btn btn-success']) ?>
 						
-                </div><!-- container -->
+					</div>
+					<div class="col-md-6">
+						<img src="uploads/<?php echo $ImageName; ?>.jpg">
+						
+					</div>
+				  </div>
+				
+				
+			  </div>
+			</div><!-- container -->
             </div><!-- contact-area -->
         </section>
 			 
@@ -98,3 +117,5 @@ $this->params['breadcrumbs'][] = $this->title;
 
     
 </div>
+</body>
+</html>

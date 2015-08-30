@@ -65,7 +65,7 @@ a:hover,a:active,a:focus{
     color: #000;
 }
 .block_title {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 300;
     text-align: center;
     overflow: hidden;
@@ -389,7 +389,7 @@ header{
 /////////////////////////////////////////////////////////////////////*/
 
 #testimonial {
-    background: url(../images/parallax.jpg);
+    background: url(../images/bg.jpg);
     padding: 80px 0px 80px 0px;
     color: #fff;
     background-attachment: fixed;

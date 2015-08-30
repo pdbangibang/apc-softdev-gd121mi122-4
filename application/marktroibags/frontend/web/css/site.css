@@ -1,18 +1,31 @@
 html,
 body {
-    height: 100%;
+    
+	padding-top: 30px;
 }
  /*---------------------------PERSONALIZE CSS-----------------------------*/
  .my-navbar {
 	font-size: 18px;
     margin: auto;
 	text-align: center;
-	width: 125%;
-	background-color: #000000;
+	padding: 15px;
+	background-color: #ecf0f1;
  }
- .navbar-fixed-top + .content-container {
-	margin-top: 70px;
-}
+ 
+ .dnav {
+ 
+ }
+ 
+ 
+ 
+ .box {
+	
+	padding-left: 150px;
+	padding-right: 150px;
+	font-size: 18px;
+	
+ }
+
 .content-container {
 	margin: 0 130px;
 }
