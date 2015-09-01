@@ -12,11 +12,61 @@ body {
 	background-color: #ecf0f1;
  }
  
- .dnav {
- 
- }
- 
- 
+.wrapme{
+	width: 100%;
+}
+
+.flat-table {
+		width: 50%;
+		margin-bottom: 20px;
+		border-collapse:collapse;
+		font-family: 'Raleway';
+		border: solid;
+                border-radius: 5px;
+               -webkit-border-radius: 3px;
+               -moz-border-radius: 3px;
+		
+	}
+	
+	.flat-table th {
+		font-weight: normal;
+		-webkit-font-smoothing: antialiased;
+		padding: 1em 
+		color: rgba(0,0,0,0.45);
+		text-shadow: 0 0 1px rgba(0,0,0,0.1);
+		font-size: 1.5em;
+	}
+	.flat-table td {
+		border: solid;
+		color: #000000;
+		padding: 0.7em 1em 0.7em 1.15em;
+		text-shadow: 0 0 1px rgba(255,255,255,0.1);
+		font-size: 1.4em;
+	}
+	.flat-table tr {
+		-webkit-transition: background 0.3s, box-shadow 0.3s;
+		-moz-transition: background 0.3s, box-shadow 0.3s;
+		transition: background 0.3s, box-shadow 0.3s;
+	}
+	.flat-table-1 {
+		background: rgba(255,255,255,0.19);;
+	}
+	.flat-table-1 tr:hover {
+		background: rgba(255,255,255,0);
+		color: #ffffff;
+	}
+	.flat-table-2 tr:hover {
+		background: rgba(0,0,0,0.1);
+	}
+	.flat-table-2 {
+		background: #f06060;
+	}
+	.flat-table-3 {
+		background: #52be7f;
+	}
+	.flat-table-3 tr:hover {
+		background: rgba(0,0,0,0.1);
+	}
  
  .box {
 	
@@ -106,7 +156,7 @@ body {
  }
  
 .fontpro {
-   font-family: 'Open Sans Condensed', sans-serif;
+   font-family: 'Raleway', sans-serif;
 }
  
   #wrap > .container {
@@ -202,7 +252,7 @@ a.asc:after, a.desc:after {
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Glyphicons Halflings';
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: normal;
     line-height: 1;
