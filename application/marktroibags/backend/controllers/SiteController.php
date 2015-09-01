@@ -26,25 +26,25 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login'],
+                        'actions' => ['login', 'error'],
                         'allow' => true,
                     ],
-					[
-                        'actions' => ['signup'],
+					
+					 [
+                        'actions' => ['signup', 'error'],
                         'allow' => true,
                     ],
-					[
-                        'actions' => ['logout'],
+                    [
+                        'actions' => ['logout', 'index'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
-                   
                 ],
             ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'logout' => ['post'],
+                    'logout' => ['get'],
                 ],
             ],
         ];
@@ -61,24 +61,19 @@ class SiteController extends Controller
                 'class' => 'yii\web\ErrorAction',
             ],
 			
-			'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-            ],
         ];
     }
 
     public function actionIndex()
     {
         return $this->render('index');
+		
     }
 
     public function actionLogin()
     {
-        if (!\Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-
-        $model = new AdminLoginForm();
+        if (Yii::$app->user->isGuest) {
+            $model = new AdminLoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->render('index');
         } else {
@@ -86,6 +81,13 @@ class SiteController extends Controller
                 'model' => $model,
             ]);
         }
+        }else {
+			return $this->render('index');
+		}
+
+        
+		
+		
     }
 
 public function actionLogout()
@@ -110,6 +112,7 @@ public function actionSignup()
             'model' => $model,
         ]);
     }
+	
 	
 	public function actionRequestPasswordReset()
     {
