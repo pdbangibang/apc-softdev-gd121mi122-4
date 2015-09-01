@@ -43,7 +43,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Create Order', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-
+	<br>
+	<div class="container wrapme">
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -63,6 +64,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+	</div>
 
 </div>
 <script src="assets/js/jquery-2.1.3.min.js"></script>
