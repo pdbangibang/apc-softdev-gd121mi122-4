@@ -50,6 +50,9 @@ class AdminLoginForm extends Model
     }
 	 
 	 
+	 
+	 
+	 
     public function validatePassword($attribute, $params)
     {
         if (!$this->hasErrors()) {

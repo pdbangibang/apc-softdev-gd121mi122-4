@@ -15,25 +15,11 @@ use yii\widgets\ActiveForm;
         'method' => 'get',
     ]); ?>
 
-
-
-
     <?= $form->field($model, 'user_id') ?>
 
     <?= $form->field($model, 'username') ?>
 
-    <!--<?= $form->field($model, 'product_id') ?> -->
-
-    <?php 
-        $products=Product::find()->all();
-
-        $listData=ArrayHelper::map($products,'id','name');
-
-        echo $form->field($model, 'product_id')->dropDownList(
-                                $listData, 
-                                ['prompt'=>'Select Product...']);
-    ?>
-
+    <?= $form->field($model, 'product_id') ?>
 
     <?= $form->field($model, 'qty') ?>
 

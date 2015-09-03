@@ -5,81 +5,81 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use frontend\widgets\Alert;
+use kartik\nav\NavX;
+
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
 AppAsset::register($this);
-?> 
+?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
     <meta charset="<?= Yii::$app->charset ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?= Html::csrfMetaTags() ?>
+	<?= Html::csrfMetaTags() ?>
+	
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
 <body>
     <?php $this->beginBody() ?>
-    <div class="wrap">
+	<center>
+	
         <?php
             NavBar::begin([
-                'brandLabel' => 'Marktroi Bags Online',
+                'brandLabel' => Html::img('product/view/uploads/Untitled2.png'),
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
-                    'class' => 'navbar-inverse navbar-fixed-top',
+                    'class' => 'my-navbar navbar-fixed-top',
                 ],
             ]);
-            $menuItems = [
-                
-                ['label' => 'Products', 'url' => ['/product/index']],
-               //['label' => 'Promotion', 'url' => ['/promotion/index']],
-                ['label' => 'Report', 'url' => ['/report/index']],
-               // ['label' => 'Order Status', 'url' => ['/order/index']],
-               // ['label' => 'About', 'url' => ['/site/about']],
-               // ['label' => 'Contact', 'url' => ['/site/contact']],
-                
-                
-            ];
+
+
             if (Yii::$app->user->isGuest) {
-                $menuItems[] = ['label' => 'Home', 'url' => Yii::$app->homeUrl];
-                //$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-                $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-            } else {
+                    $menuItems = 
+                    [
+                   
+                    ['label' => 'About Us', 'url' => ['/site/about']],
+                    ['label' => 'Contact Us', 'url' => ['/site/contact']],
+                    ['label' => 'Register', 'url' => ['/site/signup']],
+                    ['label' => 'Login', 'url' => ['/site/login']],
+                ];
+
+                } else {
                 if(Yii::$app->user->identity->id == 1){
-                    $menuItems[] = ['label' => 'Products', 'url' => ['/product/index']];
-                    $menuItems[] = ['label' => 'Orders List', 'url' => ['/order/index']];   
-                    $menuItems[] = ['label' => 'Manage Users', 'url' => ['/user/index']];                    
-                    $menuItems[] = ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']];
-                } else {                 
-                    $menuItems[] = ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']];    
+                    $menuItems = [
+					 ['label' => 'Home', 'url' => Yii::$app->homeUrl],
+					 ['label' => 'Products', 'items' => [
+						['label' => 'Backpacks', 'url' => ['/product/index#backpacks']],
+						['label' => 'Clutch', 'url' => ['/product/index#clutch']],
+						['label' => 'Duffel', 'url' => ['/product/index#duffel']],
+						['label' => 'Laptop', 'url' => ['/product/index#laptop']],
+						['label' => 'Purse', 'url' => ['/product/index#purse']],
+						['label' => 'Shoulder Bag', 'url' => ['/product/index#shoulderbag']],
+						['label' => 'Sports Travel', 'url' => ['/product/index#sportstravel']],
+					]],
+					['label' => 'Orders', 'url' => ['/order/index']],
+                    ['label' => 'Manage', 'url' => ['/user/index']],                    
+                    ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']]
+                ];
+                } else {
+                    
                 }
             }
             echo Nav::widget([
-                'options' => ['class' => 'navbar-nav navbar-right'],
+                'options' => ['class' => 'my-navbar navbar-nav navbar-right'],
                 'items' => $menuItems,
             ]);
             NavBar::end();
         ?>
 
-        <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
+        <div>         
         <?= $content ?>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="container">
-        <p class="pull-left">&copy; Marktroi Bags Online <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
-        </div>
-    </footer>
-
+		</div>
+	</center>
     <?php $this->endBody() ?>
 </body>
 </html>

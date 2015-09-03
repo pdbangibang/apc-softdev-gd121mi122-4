@@ -71,7 +71,8 @@ class SignupForm extends Model
 			$user->company_description = $this->company_description;
 			$user->shipping_address = $this->shipping_address;
             $user->generateAuthKey();
-			$user1 = new User();
+			
+			 $user1 = new User();
 			$user1->fname = $this->fname;
 			$user1->lname = $this->lname;
 			$user1->contact_no = $this->contact_no;
@@ -82,13 +83,31 @@ class SignupForm extends Model
 			$user1->company_description = $this->company_description;
 			$user1->shipping_address = $this->shipping_address;
             $user1->generateAuthKey();
-
+			
             if ($user->save() && $user1->save()) {
                 return $user;
-				return user1;
+				                return $user1;
+
             }
         }
 
         return null;
+    }
+	
+	public function attributeLabels()
+    {
+        return [
+            'fname' => 'First Name',
+            'lname' => 'Last Name',
+            'contact_no' => 'Contact No.',
+            'username' => 'Username',
+			'email' => 'Email Address',
+			'password' => 'Password',
+			'company_name' => 'Company Name',
+			'company_description' => 'Company Description',
+			'company_address' => 'Company Address',
+			'shipping_address' => 'Shipping_Address',
+			'captcha' => 'Captcha',
+        ];
     }
 }

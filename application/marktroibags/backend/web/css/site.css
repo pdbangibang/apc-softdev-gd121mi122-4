@@ -1,7 +1,218 @@
 html,
 body {
-    height: 100%;
+    
+	padding-top: 30px;
 }
+ /*---------------------------PERSONALIZE CSS-----------------------------*/
+ .my-navbar {
+	font-size: 18px;
+    margin: auto;
+	text-align: center;
+	padding: 15px;
+	background-color: #ecf0f1;
+ }
+ 
+.wrapme{
+	width: 100%;
+}
+
+.flat-table {
+		width: 50%;
+		margin-bottom: 20px;
+		border-collapse:collapse;
+		font-family: 'Raleway';
+		border: solid;
+                border-radius: 5px;
+               -webkit-border-radius: 3px;
+               -moz-border-radius: 3px;
+		
+	}
+	
+	.flat-table th {
+		font-weight: normal;
+		-webkit-font-smoothing: antialiased;
+		padding: 1em 
+		color: rgba(0,0,0,0.45);
+		text-shadow: 0 0 1px rgba(0,0,0,0.1);
+		font-size: 1.5em;
+	}
+	.flat-table td {
+		border: solid;
+		color: #000000;
+		padding: 0.7em 1em 0.7em 1.15em;
+		text-shadow: 0 0 1px rgba(255,255,255,0.1);
+		font-size: 1.4em;
+	}
+	.flat-table tr {
+		-webkit-transition: background 0.3s, box-shadow 0.3s;
+		-moz-transition: background 0.3s, box-shadow 0.3s;
+		transition: background 0.3s, box-shadow 0.3s;
+	}
+	.flat-table-1 {
+		background: rgba(255,255,255,0.19);;
+	}
+	.flat-table-1 tr:hover {
+		background: rgba(255,255,255,0);
+		color: #ffffff;
+	}
+	.flat-table-2 tr:hover {
+		background: rgba(0,0,0,0.1);
+	}
+	.flat-table-2 {
+		background: #f06060;
+	}
+	.flat-table-3 {
+		background: #52be7f;
+	}
+	.flat-table-3 tr:hover {
+		background: rgba(0,0,0,0.1);
+	}
+ 
+ .box {
+	
+	padding-left: 150px;
+	padding-right: 150px;
+	font-size: 18px;
+	
+ }
+
+.content-container {
+	margin: 0 130px;
+}
+
+.butcos {
+	padding: 20px;
+	font-size: 150%;
+}
+
+.spinner {
+  width: 100px;
+}
+.spinner input {
+  text-align: right;
+}
+.input-group-btn-vertical {
+  position: relative;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.input-group-btn-vertical > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  margin-left: -1px;
+  position: relative;
+  border-radius: 0;
+}
+.input-group-btn-vertical > .btn:first-child {
+  border-top-right-radius: 4px;
+}
+.input-group-btn-vertical > .btn:last-child {
+  margin-top: -2px;
+  border-bottom-right-radius: 4px;
+}
+.input-group-btn-vertical i{
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+
+
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px; /* negative of the offset - height of link element */
+    left: 10px; /* padding from the left side of the window */
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px; /* height of link element */
+    left: 10px; /* padding from the left side of the window */
+}
+ 
+ #backpacks {
+	padding-top: 70px;
+ }
+ #clutch {
+	padding-top: 70px;
+ }
+ #duffel {
+	padding-top: 70px;
+ }
+ #laptop {
+	padding-top: 70px;
+ }
+ #purse {
+	padding-top: 70px;
+ }
+ #shoulder {
+	padding-top: 70px;
+ }
+ #sportstravel {
+	padding-top: 70px;
+ }
+ 
+.fontpro {
+   font-family: 'Raleway', sans-serif;
+}
+ 
+  #wrap > .container {
+    padding: 60px 15px 0;
+}
+
+@media (min-width:768px) {
+.container {
+width:100%;
+}
+#main-content{
+     min-height: 100%;
+    height: auto; 
+   
+}
+#main-content > .row {
+ overflow-x:scroll;
+     overflow-y:hidden;
+    white-space:nowrap;
+}    
+#main-content > .row [class*="col-lg"], #main-content > .row [class*="col-md"], #main-content > .row [class*="col-sm"] {
+    float:none;
+    display:inline-block;
+}
+
+.pcos {
+	text-align:center;
+	background: rgba(0, 0, 0, .3);
+	padding: 10px;
+}
+
+ .DocumentList
+{
+    overflow-x:scroll;
+    overflow-y:hidden;
+    height:200px;
+    width:100%;
+    padding: 0 15px;
+}
+
+.DocumentItem
+{
+    border:1px solid black;
+    padding:0;
+    height:200px;
+}
+
+.list-inline {
+  white-space:nowrap;
+}
+
+.my-modal {
+	background-color:#E66F69;    
+}
+
+ /*------------------------------------------------------------------------*/
 
 .wrap {
     min-height: 100%;
@@ -41,7 +252,7 @@ a.asc:after, a.desc:after {
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Glyphicons Halflings';
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: normal;
     line-height: 1;

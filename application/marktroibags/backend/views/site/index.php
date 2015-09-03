@@ -1,22 +1,14 @@
 <?php
+/* @var $this yii\web\View */
+$this->title = 'Marktroi Bags';
+
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use backend\assets\AppAsset;
+use frontend\assets\AppAsset;
 use frontend\widgets\Alert;
-use backend\controllers\SiteController;
 use kartik\dropdown\DropdownX;
-
-/* @var $this \yii\web\View */
-/* @var $content string */
-
-//AppAsset::register($this);
-/* @var $this yii\web\View */
-$this->title = 'Marktroi Bags';
-
-
-
 ?>
 
 <html class="no-js">

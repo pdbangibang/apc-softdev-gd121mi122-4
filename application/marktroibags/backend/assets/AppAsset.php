@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace backend\assets;
+namespace frontend\assets;
 
 use yii\web\AssetBundle;
 
@@ -18,27 +18,22 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
+		'assets/css/bootstrap.min.css',
+		'assets/css/animate.css',
+		'assets/css/own.carousel.css',
+        'assets/css/owl.theme.css',
+		'assets/css/style.css',
         'css/site.css',
-		'css/animate.min.css',
-		'css/bootstrap.min.css',
-		'css/custom.css',
-		'css/floatexamples.css',
-		'css/ion.rangeSlider.css',
-		'css/ion.rangeSlider.skinFlat.css',
-		'css/normalize.css',
-		'css/nprogress.css',
-		
-		'fonts/css/font-awesome.min.css',
-		
-		'css/maps/jquery-jvectormap-2.0.1.css',
-		'css/icheck/flat/green.css',
-		
-		
     ];
     public $js = [
-		'js/jquery.min.js',
-		'js/nprogress.js',
-	
+		'assets/js/bootstrap.min.js',
+		'assets/js/jquery.actual.js',
+		'assets/js/jquery-2.1.3.min.js',
+		'assets/js/modernizr.js',
+		'assets/js/owl.carousel.js',
+		'assets/js/script.js',
+		'assets/js/smoothscroll.js',
+		'assets/js/main.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

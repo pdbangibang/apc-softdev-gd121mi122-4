@@ -4,16 +4,8 @@ namespace backend\controllers;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
-use common\models\AdminLoginForm;
+use common\models\LoginForm;
 use yii\filters\VerbFilter;
-use backend\models\SignupForm;
-use common\models\UserDet;
-use common\models\UserDetSearch;
-use frontend\models\PasswordResetRequestForm;
-use frontend\models\ResetPasswordForm;
-use yii\base\InvalidParamException;
-use yii\web\BadRequestHttpException;
-
 
 /**
  * Site controller
@@ -23,24 +15,16 @@ class SiteController extends Controller
     /**
      * @inheritdoc
      */
-	 
-	 
     public function behaviors()
     {
         return [
             'access' => [
                 'class' => AccessControl::className(),
-				'only'	=> ['login', 'logout', 'signup'],
                 'rules' => [
                     [
                         'actions' => ['login', 'error'],
                         'allow' => true,
                     ],
-					[
-					'actions' => ['signup'],
-                        'allow' => true,
-						'roles' => ['?'],
-					],
                     [
                         'actions' => ['logout', 'index'],
                         'allow' => true,
@@ -57,8 +41,7 @@ class SiteController extends Controller
         ];
     }
 
-	
-	/**
+    /**
      * @inheritdoc
      */
     public function actions()
@@ -67,98 +50,34 @@ class SiteController extends Controller
             'error' => [
                 'class' => 'yii\web\ErrorAction',
             ],
-			
         ];
     }
 
     public function actionIndex()
     {
         return $this->render('index');
-		
     }
 
     public function actionLogin()
     {
-        if (Yii::$app->user->isGuest) {
-            $model = new AdminLoginForm();
+        if (!\Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+
+        $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->render('index');
+            return $this->goBack();
         } else {
             return $this->render('login', [
                 'model' => $model,
             ]);
         }
-        }else {
-			return $this->render('index');
-		}
-
-        
-		
-		
     }
 
-public function actionLogout()
+    public function actionLogout()
     {
         Yii::$app->user->logout();
 
         return $this->goHome();
-    }
-		
-		public function actionSignup()
-    {
-        $model = new SignupForm();
-        if ($model->load(Yii::$app->request->post())) {
-            if ($user = $model->signup()) {
-                if (Yii::$app->getUser()->login($user)) {
-                    return $this->render('signup', [
-            'model' => $model,
-        ]);
-                }
-            }
-        }
-
-        return $this->render('signup', [
-            'model' => $model,
-        ]);
-    }
-		
-
-	
-	
-	public function actionRequestPasswordReset()
-    {
-        $model = new PasswordResetRequestForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail()) {
-                Yii::$app->getSession()->setFlash('success', 'Check your email for further instructions.');
-
-                return $this->goHome();
-            } else {
-                Yii::$app->getSession()->setFlash('error', 'Sorry, we are unable to reset password for email provided.');
-            }
-        }
-
-        return $this->render('requestPasswordResetToken', [
-            'model' => $model,
-        ]);
-    }
-
-    public function actionResetPassword($token)
-    {
-        try {
-            $model = new ResetPasswordForm($token);
-        } catch (InvalidParamException $e) {
-            throw new BadRequestHttpException($e->getMessage());
-        }
-
-        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
-            Yii::$app->getSession()->setFlash('success', 'New password was saved.');
-
-            return $this->goHome();
-        }
-
-        return $this->render('resetPassword', [
-            'model' => $model,
-        ]);
     }
 }

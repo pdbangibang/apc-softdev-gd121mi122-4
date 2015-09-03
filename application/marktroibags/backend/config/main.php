@@ -6,30 +6,39 @@ $params = array_merge(
     require(__DIR__ . '/params-local.php')
 );
 
-
 return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
-    'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'controllerNamespace' => 'backend\controllers',
     'components' => [
+         'urlManager' => [
+        'class' => 'yii\web\UrlManager',
+        // Disable index.php
+        'showScriptName' => false,
+        // Disable r= routes
+        'enablePrettyUrl' => true,
+        'rules' => array(
+                '<controller:\w+>/<id:\d+>' => '<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+        ),
+        ],
         'user' => [
             'identityClass' => 'common\models\Admin',
-            'enableAutoLogin' => false,
+            'enableAutoLogin' => true,
 			'identityCookie' => [
-                'name' => '_backendUser', // unique for backend
+                'name' => '_frontendUser', // unique for frontend
             ]
-			//'returnUrl' => '/site/index',
         ],
 		'session' => [
-            'name' => 'PHPBACKSESSID',
+            'name' => 'PHPFRONTSESSID',
             'savePath' => sys_get_temp_dir(),
         ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'CKmUoOfYInAgPXKGiTlQ',
-            'csrfParam' => '_backendCSRF',
+            'cookieValidationKey' => 'btGhRCaBUNPWDETujAfn',
+            'csrfParam' => '_frontendCSRF',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -46,4 +55,3 @@ return [
     ],
     'params' => $params,
 ];
-

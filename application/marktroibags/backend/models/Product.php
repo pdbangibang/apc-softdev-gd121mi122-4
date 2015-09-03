@@ -4,7 +4,6 @@ namespace backend\models;
 
 use Yii;
 
-
 /**
  * This is the model class for table "product".
  *
@@ -34,9 +33,9 @@ class Product extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'description'], 'required'],
+            [['user_id', 'id', 'name', 'description'], 'required'],
             [['user_id', 'id'], 'integer'],
-            [['name', 'description','logo','username'], 'string', 'max' => 200],
+            [['name', 'description','logo'], 'string', 'max' => 200],
             [['file'],'file']
         ];
     }
@@ -48,7 +47,7 @@ class Product extends \yii\db\ActiveRecord
     {
         return [
             'user_id' => 'User',
-            'id' => 'ID',
+            'id' => 'Product ID',
             'name' => 'Name',
             'description' => 'Description',
             'file' => 'Product Img ------ Upload Images with file extension .jpg only'
@@ -70,12 +69,4 @@ class Product extends \yii\db\ActiveRecord
     {
         return $this->hasOne(user::className(), ['id' => 'user_id']);
     }
-    
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-   // public function getUsername()
-    //{
-     //   return $this->hasOne(Username::className(), ['id' => 'username']);
-    //}
 }
