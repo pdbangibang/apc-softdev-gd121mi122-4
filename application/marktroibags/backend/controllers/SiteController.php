@@ -29,11 +29,10 @@ class SiteController extends Controller
                         'actions' => ['login', 'error'],
                         'allow' => true,
                     ],
-					
-					 [
-                        'actions' => ['signup', 'error'],
+					[
+					'actions' => ['signup'],
                         'allow' => true,
-                    ],
+					],
                     [
                         'actions' => ['logout', 'index'],
                         'allow' => true,
@@ -96,14 +95,16 @@ public function actionLogout()
 
         return $this->goHome();
     }
-	
-public function actionSignup()
+		
+		public function actionSignup()
     {
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
                 if (Yii::$app->getUser()->login($user)) {
-                    return $this-> goHome();
+                    return $this->render('signup', [
+            'model' => $model,
+        ]);
                 }
             }
         }
@@ -112,6 +113,8 @@ public function actionSignup()
             'model' => $model,
         ]);
     }
+		
+
 	
 	
 	public function actionRequestPasswordReset()
