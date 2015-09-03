@@ -6,7 +6,7 @@ use backend\models\Product;
 use backend\models\Order;
 
 /* @var $this yii\web\View */
-/* @var $searchModel frontend\models\OrderSearch */
+/* @var $searchModel backend\models\OrderSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Orders';

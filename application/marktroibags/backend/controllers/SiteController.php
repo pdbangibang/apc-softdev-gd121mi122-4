@@ -7,7 +7,13 @@ use yii\web\Controller;
 use common\models\AdminLoginForm;
 use yii\filters\VerbFilter;
 use backend\models\SignupForm;
-use yii\captcha\Captcha;
+use common\models\UserDet;
+use common\models\UserDetSearch;
+use frontend\models\PasswordResetRequestForm;
+use frontend\models\ResetPasswordForm;
+use yii\base\InvalidParamException;
+use yii\web\BadRequestHttpException;
+
 
 /**
  * Site controller
@@ -24,6 +30,7 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
+				'only'	=> ['login', 'logout', 'signup'],
                 'rules' => [
                     [
                         'actions' => ['login', 'error'],
@@ -32,6 +39,7 @@ class SiteController extends Controller
 					[
 					'actions' => ['signup'],
                         'allow' => true,
+						'roles' => ['?'],
 					],
                     [
                         'actions' => ['logout', 'index'],
@@ -43,7 +51,7 @@ class SiteController extends Controller
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'logout' => ['get'],
+                    'logout' => ['post'],
                 ],
             ],
         ];
