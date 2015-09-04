@@ -53,7 +53,7 @@ class Order extends \yii\db\ActiveRecord
             [['user_id', 'username', 'product_id', 'qty', 'date', 'Status'], 'required'],
             [['user_id', 'product_id'], 'integer'],
             [['username', 'qty', 'date'], 'string', 'max' => 45],
-            [['Status'], 'string', 'max' => 255]
+            [['Status'], 'string', 'max' => 52]
         ];
     }
 
@@ -96,4 +96,6 @@ class Order extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Report::className(), ['order_id' => 'id']);
     }
+	
+	
 }

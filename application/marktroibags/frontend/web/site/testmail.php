@@ -8,7 +8,15 @@ $headers = "from: demo@localhost";
 
 if (mail($to, $subject, $body, $headers))
 {
+	function Redirect($url, $permanent = false)
+{
+    header('Location: ' . $url, true, $permanent ? 301 : 302);
 
+    exit();
+}
+
+Redirect('contact', false);
+	
 	echo("sent");
 } else {
 	echo("Fail");

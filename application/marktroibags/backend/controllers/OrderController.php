@@ -61,6 +61,9 @@ class OrderController extends Controller
     public function actionCreate()
     {
         $model = new Order();
+		$model-> product_id = $this->product_id;
+		$model-> status = $this->status;
+		$model-> qty = $this->qty;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -81,6 +84,8 @@ class OrderController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+		
+		$order = new Order();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
