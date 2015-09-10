@@ -70,13 +70,6 @@ $this->params['breadcrumbs'][] = $this->title;
 							<h4><?= $pname = $model->description; ?></h4>
 							</br>
 							</br>
-							<div class="input-group spinner">
-								<input type="text" class="form-control" value="0">
-								<div class="input-group-btn-vertical">
-								  <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-								  <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
-								</div>
-							  </div>
 							</br>
 							</br>
 							

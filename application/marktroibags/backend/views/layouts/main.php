@@ -52,15 +52,7 @@ AppAsset::register($this);
                 if(Yii::$app->user->identity->id == 1){
                     $menuItems = [
 					 ['label' => 'Home', 'url' => Yii::$app->homeUrl],
-					 ['label' => 'Products', 'items' => [
-						['label' => 'Backpacks', 'url' => ['/product/index#backpacks']],
-						['label' => 'Clutch', 'url' => ['/product/index#clutch']],
-						['label' => 'Duffel', 'url' => ['/product/index#duffel']],
-						['label' => 'Laptop', 'url' => ['/product/index#laptop']],
-						['label' => 'Purse', 'url' => ['/product/index#purse']],
-						['label' => 'Shoulder Bag', 'url' => ['/product/index#shoulderbag']],
-						['label' => 'Sports Travel', 'url' => ['/product/index#sportstravel']],
-					]],
+					['label' => 'Products', 'url' => ['/product/index']],
 					['label' => 'Orders', 'url' => ['/order/index']],
                     ['label' => 'Manage', 'url' => ['/user/index']],                    
                     ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']]
